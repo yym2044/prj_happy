@@ -21,6 +21,12 @@ th, td {
 th {
 	background-color: gray;
 }
+
+table {
+	border-width: 2px;
+	margin-left: 20px;
+}
+
 </style>
 
 </head>
@@ -28,7 +34,7 @@ th {
 <body>
 	memberForm.html
 	<form action="" method="get" id="" name="memberRegisterForm" enctype="multipart/form-data">
-		<table border="1">
+		<table>
 			<caption>
 				<b>회원정보</b>
 			</caption>
@@ -60,7 +66,7 @@ th {
 			</tr>
 			<tr>
 				<th>주소</th>
-				<td colspan="3"><input type="text" id="" name="address" size="100"></td>
+				<td colspan="3"><input type="text" id="" name="address" size="120px"></td>
 			</tr>
 			<tr>
 				<th>모바일</th>
@@ -72,8 +78,7 @@ th {
 					- <input type="text" id="" name="phone3" size="4"></td>
 				<th>모바일 마케팅 수신 동의</th>
 				<td><input type="radio" id="" name="mobile_marketing" value="1">예 <input type="radio" id=""
-					name="mobile_marketing" value="2"
-				>아니오</td>
+					name="mobile_marketing" value="2">아니오</td>
 			</tr>
 			<tr>
 				<th>전화번호</th>
@@ -97,8 +102,7 @@ th {
 						<option>063
 						<option>064
 				</select> - <input type="text" id="" name="homeNumber2" size="3"> - <input type="text" id="" name="homeNumber3"
-					size="4"
-				></td>
+					size="4"></td>
 				<th>팩스번호</th>
 				<td><input type="text" id="" name="faxNumber"></td>
 			</tr>
@@ -107,16 +111,14 @@ th {
 				<td><input type="email" id="" name="email" placeholder="abcd@naver.com"></td>
 				<th>이메일 마케팅 수신 동의</th>
 				<td><input type="radio" id="" name="email_marketing" value="1">예 <input type="radio" id=""
-					name="email_marketing" value="2"
-				>아니오</td>
+					name="email_marketing" value="2">아니오</td>
 
 			</tr>
 
 			<tr>
 				<th>추천인</th>
 				<td colspan="3"><input type="text" id="" name="recommender1"> <input type="text" id=""
-					name="recommender2"
-				> <input type="text" id="" name="recommender3"></td>
+					name="recommender2"> <input type="text" id="" name="recommender3"></td>
 			</tr>
 			<tr>
 				<th>비밀번호 문제</th>
@@ -148,25 +150,20 @@ th {
 			<tr>
 				<th>취미</th>
 				<td colspan="3"><input type="checkbox" id="" name="hobby" value="movie">영화시청 <input type="checkbox"
-					id="" name="hobby" value="smartphone"
-				>스마트폰 <input type="checkbox" id="" name="hobby" value="reading">독서 <input type="checkbox" id=""
-					name="hobby" value="shopping"
-				>쇼핑 <input type="checkbox" id="" name="hobby" value="camping">캠핑 <input type="checkbox" id="" name="hobby"
-					value="music"
-				>음악감상 <input type="checkbox" id="" name="hobby" value="instrument">악기연주 <br> <input type="checkbox"
-					id="" name="hobby" value="boardgame"
-				>보드게임 <input type="checkbox" id="" name="hobby" value="jog">조깅 <input type="checkbox" id="" name="hobby"
-					value="sow"
-				>바느질 <input type="checkbox" id="" name="hobby" value="foodtour">맛집탐방 <input type="checkbox" id=""
-					name="hobby" value="sports"
-				>스포츠 <input type="checkbox" id="" name="hobby" value="else">기타</td>
+					id="" name="hobby" value="smartphone">스마트폰 <input type="checkbox" id="" name="hobby" value="reading">독서
+					<input type="checkbox" id="" name="hobby" value="shopping">쇼핑 <input type="checkbox" id=""
+					name="hobby" value="camping">캠핑 <input type="checkbox" id="" name="hobby" value="music">음악감상
+					<input type="checkbox" id="" name="hobby" value="instrument">악기연주 <br> <input type="checkbox" id=""
+					name="hobby" value="boardgame">보드게임 <input type="checkbox" id="" name="hobby" value="jog">조깅
+					<input type="checkbox" id="" name="hobby" value="sow">바느질 <input type="checkbox" id="" name="hobby"
+					value="foodtour">맛집탐방 <input type="checkbox" id="" name="hobby" value="sports">스포츠 <input
+					type="checkbox" id="" name="hobby" value="else">기타</td>
 
 			</tr>
 			<tr>
 				<th>결혼여부</th>
 				<td><input type="radio" id="" name="marriage" value="1">예 <input type="radio" id="" name="marriage"
-					value="2"
-				>아니오</td>
+					value="2">아니오</td>
 				<th>결혼기념일</th>
 				<td>-</td>
 			</tr>
@@ -191,32 +188,32 @@ th {
 				</select></td>
 			</tr>
 		</table>
-<br><hr><br>
+		<br>
+		<hr>
+		<br>
 		<table>
 			<tr>
 				<th>번호</th>
 				<th>프로젝트명</th>
-				<th>기간</th>
+				<th width="220px">기간</th>
 				<th>프로젝트 내용</th>
 				<th>발주처</th>
 			</tr>
 			<tr>
 				<th>1</th>
-				<td><input type="text" id="" name="projectName1"></td>
-				<td>시작일 : <input type="month" id="" name="term1S" value="2022-01"> ~ 종료일 : <input type="month" id=""
-					name="term1E" value="2022-01"
-				></td>
-				<td><textarea id="" name="contents1" rows="6" cols="30" placeholder="여기에 내용을 입력하세요."></textarea></td>
-				<td><input type="text" id="" name="buyer1"></td>
+				<td><textarea id="" name="projectName1" rows="8" cols="22" placeholder="프로젝트명"></textarea></td>
+				<td>시작일 : <input type="month" id="" name="term1S" value="2022-01"> <br>
+				<br> 종료일 : <input type="month" id="" name="term1E" value="2022-01"></td>
+				<td><textarea id="" name="contents1" rows="8" cols="33" placeholder="여기에 내용을 입력하세요."></textarea></td>
+				<td><textarea id="" name="buyer1" rows="8" placeholder="발주처"></textarea></td>
 			</tr>
 			<tr>
 				<th>2</th>
-				<td><input type="text" id="" name="projectName2"></td>
-				<td>시작일 : <input type="month" id="" name="term2S" value="2022-01"> ~ 종료일 : <input type="month" id=""
-					name="term2E" value="2022-01"
-				></td>
-				<td><textarea id="" name="contents2" rows="6" cols="30" placeholder="여기에 내용을 입력하세요."></textarea></td>
-				<td><input type="text" id="" name="buyer2"></td>
+				<td><textarea id="" name="projectName2" rows="8" cols="22" placeholder="프로젝트명"></textarea></td>
+				<td>시작일 : <input type="month" id="" name="term2S" value="2022-01"> <br>
+				<br> 종료일 : <input type="month" id="" name="term2E" value="2022-01"></td>
+				<td><textarea id="" name="contents2" rows="8" cols="33" placeholder="여기에 내용을 입력하세요."></textarea></td>
+				<td><textarea id="" name="buyer2" rows="8" placeholder="발주처"></textarea></td>
 			</tr>
 
 		</table>
