@@ -22,15 +22,29 @@
 			</caption>
 			<tr>
 				<th class="text-center table-success">이름</th>
-				<td><input type="text" id="" name="name"></td>
+				<td><input class="form-control" type="text" placeholder="이름을 입력하세요" id="" name="name"></td>
 				<th class="text-center table-success">성별</th>
-				<td><input type="radio" id="" name="gender">남 <input type="radio" id="" name="gender">여</td>
+				<td><div class="form-check">
+						<input class="form-check-input" type="radio" name="gender" id="male"> <label class="form-check-label"
+							for="male"> 남 </label>
+					</div>
+					<div class="form-check">
+						<input class="form-check-input" type="radio" name="gender" id="female"> <label
+							class="form-check-label" for="female"> 여 </label>
+					</div></td>
 			</tr>
 			<tr>
 				<th class="text-center table-success">아이디</th>
-				<td><input type="text" id="" name="id"></td>
+				<td><input class="form-control" type="text" placeholder="아이디를 입력하세요" id="" name="id"></td>
 				<th class="text-center table-success">비밀번호</th>
-				<td><input type="password" id="" name="password"></td>
+				<td><div class="row g-3 align-items-center">
+						<div class="col-auto">
+							<input type="password" class="form-control" aria-describedby="passwordHelpInline">
+						</div>
+						<div class="col-auto">
+							<span class="form-text"> Must be 8-20 characters long. </span>
+						</div>
+					</div></td>
 			</tr>
 			<tr>
 				<th class="text-center table-success">생년월일</th>
@@ -56,10 +70,11 @@
 						<option>SKT
 						<option>KT
 						<option>LG
-				</select> <input type="text" id="" name="phone1" size="3"> - <input type="text" id="" name="phone2" size="4"> - <input type="text" id=""
-					name="phone3" size="4"></td>
+				</select> <input type="text" id="" name="phone1" size="3"> - <input type="text" id="" name="phone2" size="4">
+					- <input type="text" id="" name="phone3" size="4"></td>
 				<th class="text-center table-success">모바일 마케팅 수신 동의</th>
-				<td><input type="radio" id="" name="mobile_marketing" value="1">예 <input type="radio" id="" name="mobile_marketing" value="2">아니오</td>
+				<td><input type="radio" id="" name="mobile_marketing" value="1">예 <input type="radio" id=""
+					name="mobile_marketing" value="2">아니오</td>
 			</tr>
 			<tr>
 				<th class="text-center table-success">전화번호</th>
@@ -82,7 +97,8 @@
 						<option>062
 						<option>063
 						<option>064
-				</select> - <input type="text" id="" name="homeNumber2" size="3"> - <input type="text" id="" name="homeNumber3" size="4"></td>
+				</select> - <input type="text" id="" name="homeNumber2" size="3"> - <input type="text" id="" name="homeNumber3"
+					size="4"></td>
 				<th class="text-center table-success">팩스번호</th>
 				<td><input type="text" id="" name="faxNumber"></td>
 			</tr>
@@ -90,14 +106,15 @@
 				<th class="text-center table-success">이메일</th>
 				<td><input type="email" id="" name="email" placeholder="abcd@naver.com"></td>
 				<th class="text-center table-success">이메일 마케팅 수신 동의</th>
-				<td><input type="radio" id="" name="email_marketing" value="1">예 <input type="radio" id="" name="email_marketing" value="2">아니오</td>
+				<td><input type="radio" id="" name="email_marketing" value="1">예 <input type="radio" id=""
+					name="email_marketing" value="2">아니오</td>
 
 			</tr>
 
 			<tr>
 				<th class="text-center table-success">추천인</th>
-				<td colspan="3"><input type="text" id="" name="recommender1"> <input type="text" id="" name="recommender2"> <input
-					type="text" id="" name="recommender3"></td>
+				<td colspan="3"><input type="text" id="" name="recommender1"> <input type="text" id=""
+					name="recommender2"> <input type="text" id="" name="recommender3"></td>
 			</tr>
 			<tr>
 				<th class="text-center table-success">비밀번호 문제</th>
@@ -128,18 +145,43 @@
 			</tr>
 			<tr>
 				<th class="text-center table-success">취미</th>
-				<td colspan="3"><input type="checkbox" id="" name="hobby" value="movie">영화시청 <input type="checkbox" id="" name="hobby"
-					value="smartphone">스마트폰 <input type="checkbox" id="" name="hobby" value="reading">독서 <input type="checkbox" id="" name="hobby"
-					value="shopping">쇼핑 <input type="checkbox" id="" name="hobby" value="camping">캠핑 <input type="checkbox" id="" name="hobby"
-					value="music">음악감상 <input type="checkbox" id="" name="hobby" value="instrument">악기연주 <br> <input type="checkbox" id=""
-					name="hobby" value="boardgame">보드게임 <input type="checkbox" id="" name="hobby" value="jog">조깅 <input type="checkbox" id=""
-					name="hobby" value="sow">바느질 <input type="checkbox" id="" name="hobby" value="foodtour">맛집탐방 <input type="checkbox" id=""
-					name="hobby" value="sports">스포츠 <input type="checkbox" id="" name="hobby" value="else">기타</td>
+				
+				<td colspan="3">
+				<input type="checkbox" class="btn-check" id="btn-check-outlined" autocomplete="off">
+<label class="btn btn-outline-success" for="btn-check-outlined">영화시청</label><input type="checkbox" class="btn-check" id="btn-check-outlined" autocomplete="off">
+<label class="btn btn-outline-success" for="btn-check-outlined">스마트폰</label><input type="checkbox" class="btn-check" id="btn-check-outlined" autocomplete="off">
+<label class="btn btn-outline-success" for="btn-check-outlined">독서</label><input type="checkbox" class="btn-check" id="btn-check-outlined" autocomplete="off">
+<label class="btn btn-outline-success" for="btn-check-outlined">쇼핑</label><input type="checkbox" class="btn-check" id="btn-check-outlined" autocomplete="off">
+<label class="btn btn-outline-success" for="btn-check-outlined">캠핑</label><input type="checkbox" class="btn-check" id="btn-check-outlined" autocomplete="off">
+<label class="btn btn-outline-success" for="btn-check-outlined">음악감상</label><input type="checkbox" class="btn-check" id="btn-check-outlined" autocomplete="off">
+<label class="btn btn-outline-success" for="btn-check-outlined">악기연주</label>
+<br>
+<input type="checkbox" class="btn-check" id="btn-check-outlined" autocomplete="off">
+<label class="btn btn-outline-success" for="btn-check-outlined">보드게임</label><input type="checkbox" class="btn-check" id="btn-check-outlined" autocomplete="off">
+<label class="btn btn-outline-success" for="btn-check-outlined">조깅</label><input type="checkbox" class="btn-check" id="btn-check-outlined" autocomplete="off">
+<label class="btn btn-outline-success" for="btn-check-outlined">바느질</label><input type="checkbox" class="btn-check" id="btn-check-outlined" autocomplete="off">
+<label class="btn btn-outline-success" for="btn-check-outlined">맛집탐방</label><input type="checkbox" class="btn-check" id="btn-check-outlined" autocomplete="off">
+<label class="btn btn-outline-success" for="btn-check-outlined">스포츠</label><input type="checkbox" class="btn-check" id="btn-check-outlined" autocomplete="off">
+<label class="btn btn-outline-success" for="btn-check-outlined">기타</label>
+				
+				
+				</td>
+				
+				<!-- <td colspan="3"><input type="checkbox" id="" name="hobby" value="movie">영화시청 <input type="checkbox"
+					id="" name="hobby" value="smartphone">스마트폰 <input type="checkbox" id="" name="hobby" value="reading">독서
+					<input type="checkbox" id="" name="hobby" value="shopping">쇼핑 <input type="checkbox" id="" name="hobby"
+					value="camping">캠핑 <input type="checkbox" id="" name="hobby" value="music">음악감상 <input
+					type="checkbox" id="" name="hobby" value="instrument">악기연주 <br> <input type="checkbox" id=""
+					name="hobby" value="boardgame">보드게임 <input type="checkbox" id="" name="hobby" value="jog">조깅 <input
+					type="checkbox" id="" name="hobby" value="sow">바느질 <input type="checkbox" id="" name="hobby"
+					value="foodtour">맛집탐방 <input type="checkbox" id="" name="hobby" value="sports">스포츠 <input
+					type="checkbox" id="" name="hobby" value="else">기타</td> -->
 
 			</tr>
 			<tr>
 				<th class="text-center table-success">결혼여부</th>
-				<td><input type="radio" id="" name="marriage" value="1">예 <input type="radio" id="" name="marriage" value="2">아니오</td>
+				<td><input type="radio" id="" name="marriage" value="1">예 <input type="radio" id="" name="marriage"
+					value="2">아니오</td>
 				<th class="text-center table-success">결혼기념일</th>
 				<td>-</td>
 			</tr>
@@ -176,14 +218,16 @@
 			<tr>
 				<th class="text-center table-success">1</th>
 				<td><input type="text" id="" name="projectName1"></td>
-				<td>시작일 : <input type="month" id="" name="term1S" value="2022-01"> ~ 종료일 : <input type="month" id="" name="term1E" value="2022-01"></td>
+				<td>시작일 : <input type="month" id="" name="term1S" value="2022-01"> ~ 종료일 : <input type="month" id=""
+					name="term1E" value="2022-01"></td>
 				<td><textarea id="" name="contents1" rows="6" cols="30" placeholder="여기에 내용을 입력하세요."></textarea></td>
 				<td><input type="text" id="" name="buyer1"></td>
 			</tr>
 			<tr>
 				<th class="text-center table-success">2</th>
 				<td><input type="text" id="" name="projectName2"></td>
-				<td>시작일 : <input type="month" id="" name="term2S" value="2022-01"> ~ 종료일 : <input type="month" id="" name="term2E" value="2022-01"></td>
+				<td>시작일 : <input type="month" id="" name="term2S" value="2022-01"> ~ 종료일 : <input type="month" id=""
+					name="term2E" value="2022-01"></td>
 				<td><textarea id="" name="contents2" rows="6" cols="30" placeholder="여기에 내용을 입력하세요."></textarea></td>
 				<td><input type="text" id="" name="buyer2"></td>
 			</tr>
@@ -191,7 +235,10 @@
 		</table>
 
 	</form>
+	<br>
+	<div class="d-grid gap-2 d-md-flex justify-content-md-end">
+		<a class="btn btn-success" href="./memberList.html" role="button">목록</a>
+	</div>
 
-	<a href="./memberList.html">목록</a>
 </body>
 </html>
