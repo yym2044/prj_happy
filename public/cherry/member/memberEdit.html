@@ -39,21 +39,28 @@
 			</caption>
 			<tr>
 				<th class="text-center table-success">이름</th>
-				<td><input type="text" id="" name="name" value="윤영민"></td>
+				<td><input class="form-control" type="text" id="" name="name" value="윤영민"></td>
 				<th class="text-center table-success">성별</th>
-				<td><input type="radio" id="" name="gender" checked>남 <input type="radio" id="" name="gender">여</td>
+				<td><div class="form-check form-check-inline">
+						<input class="form-check-input" type="radio" name="gender" id="male" checked> <label class="form-check-label"
+							for="male"> 남 </label>
+					</div>
+					<div class="form-check form-check-inline">
+						<input class="form-check-input" type="radio" name="gender" id="female"> <label class="form-check-label"
+							for="female"> 여 </label>
+					</div></td>
 			</tr>
 			<tr>
 				<th class="text-center table-success">아이디</th>
-				<td><input type="text" id="" name="id" value="yym2044"></td>
+				<td><input class="form-control" type="text" id="" name="id" value="yym2044"></td>
 				<th class="text-center table-success">비밀번호</th>
-				<td><input type="password" id="" name="password" value="yym2044"></td>
+				<td><input class="form-control" type="password" id="" name="password" value="yym2044"></td>
 			</tr>
 			<tr>
 				<th class="text-center table-success">생년월일</th>
 				<td><input type="date" id="" name="birthDate" value="1996-06-07"></td>
 				<th class="text-center table-success">국적</th>
-				<td><select id="" name="country">
+				<td><select class="form-select" id="" name="country">
 						<option>대한민국</option>
 						<option>미국</option>
 						<option>일본</option>
@@ -65,7 +72,7 @@
 			</tr>
 			<tr>
 				<th class="text-center table-success">주소</th>
-				<td colspan="3"><input type="text" id="" name="address" size="100" value="경기도 남양주시"></td>
+				<td colspan="3"><input class="form-control" type="text" id="" name="address" size="100" value="경기도 남양주시"></td>
 			</tr>
 			<tr>
 				<th class="text-center table-success">모바일</th>
@@ -76,33 +83,47 @@
 				</select> <input type="text" id="" name="phone1" size="3" value="010"> - <input type="text" id="" name="phone2"
 					size="4" value="4635"> - <input type="text" id="" name="phone3" size="4" value="6670"></td>
 				<th class="text-center table-success">모바일 마케팅 수신 동의</th>
-				<td><input type="radio" id="" name="mobile_marketing" value="1" checked>예 <input type="radio" id=""
-					name="mobile_marketing" value="2">아니오</td>
+				<td><div class="form-check form-switch">
+						<input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" checked>
+					</div></td>
 			</tr>
 			<tr>
 				<th class="text-center table-success">전화번호</th>
-				<td><select id="" name="homeNumber2">
-						<option>02
-						<option selected>031
-						<option>032
-						<option>033
-						<option>041
-						<option>042
-						<option>043
-						<option>044
-						<option>051
-						<option>052
-						<option>053
-						<option>054
-						<option>055
-						<option>061
-						<option>062
-						<option>063
-						<option>064
-				</select> - <input type="text" id="" name="homeNumber2" size="3" value="527"> - <input type="text" id=""
-					name="homeNumber3" size="4" value="6685"></td>
+				<td><div class="row">
+						<div class="col-auto">
+							<input class="form-control form-control-inline" list="datalistOptions" id="exampleDataList"
+								placeholder="Type to search...">
+							<datalist id="datalistOptions">
+								<option value="02">
+								<option value="031">
+								<option value="032">
+								<option value="033">
+								<option value="041">
+								<option value="042">
+								<option value="043">
+								<option value="044">
+								<option value="051">
+								<option value="052">
+								<option value="053">
+								<option value="054">
+								<option value="055">
+								<option value="061">
+								<option value="062">
+								<option value="063">
+								<option value="064">
+							</datalist>
+						</div>
+						-
+						<div class="col-auto">
+							<input type="text" id="" name="homeNumber2" size="3">
+						</div>
+						-
+						<div class="col-auto">
+							<input type="text" id="" name="homeNumber3" size="4">
+						</div>
+					</div></td>
 				<th class="text-center table-success">팩스번호</th>
-				<td><input type="text" id="" name="faxNumber" value="12346576"></td>
+				<td><input class="form-control" type="text" id="" name="faxNumber" value="12346576"></td>
 			</tr>
 			<tr>
 				<th class="text-center table-success">이메일</th>
@@ -133,7 +154,7 @@
 						<option>가장 친한 친구 이름은?</option>
 				</select></td>
 				<th class="text-center table-success">비밀번호 답</th>
-				<td><input type="text" id="" name="pwAnswer" value="정읍"></td>
+				<td><input class="form-control" type="text" id="" name="pwAnswer" value="정읍"></td>
 			</tr>
 
 
@@ -142,7 +163,7 @@
 				<td>
 					<!-- <select id="" name="sns"><option>insta</option>
 						<option>facebook</option>
-						<option>twitter</option></select> <input type="text" id="snsText" name="snsText">
+						<option>twitter</option></select> <input class="form-control" type="text" id="snsText" name="snsText">
 				 -->
 					<div class="input-group">
 						<div class="input-group-text">
@@ -151,7 +172,7 @@
 						<div>
 							<img src="./sns_icon/icon_round_facebook_48.png">
 						</div>
-						<input type="text" class="form-control" aria-label="Text input with checkbox">
+						<input class="form-control" type="text" class="form-control" aria-label="Text input with checkbox">
 					</div>
 
 					<div class="input-group">
@@ -161,7 +182,7 @@
 						<div>
 							<img src="./sns_icon/icon_round_instgram_48.png">
 						</div>
-						<input type="text" class="form-control" aria-label="Text input with radio button" value="yym2044">
+						<input class="form-control" type="text" class="form-control" aria-label="Text input with radio button" value="yym2044">
 					</div>
 
 					<div class="input-group">
@@ -171,7 +192,7 @@
 						<div>
 							<img src="./sns_icon/icon_round_kakaotalk_48.png">
 						</div>
-						<input type="text" class="form-control" aria-label="Text input with radio button">
+						<input class="form-control" type="text" class="form-control" aria-label="Text input with radio button">
 					</div>
 
 					<div class="input-group">
@@ -181,7 +202,7 @@
 						<div>
 							<img src="./sns_icon/icon_round_twitter_48.png">
 						</div>
-						<input type="text" class="form-control" aria-label="Text input with radio button">
+						<input class="form-control" type="text" class="form-control" aria-label="Text input with radio button">
 					</div>
 
 					<div class="input-group">
@@ -191,7 +212,7 @@
 						<div>
 							<img src="./sns_icon/icon_round_youtube_48.png">
 						</div>
-						<input type="text" class="form-control" aria-label="Text input with radio button">
+						<input class="form-control" type="text" class="form-control" aria-label="Text input with radio button">
 					</div>
 
 				</td>
@@ -200,9 +221,9 @@
 			</tr>
 			<tr>
 				<th class="text-center table-success">홈페이지</th>
-				<td><input type="text" id="" name="homepage" value="blog.naver.com/~~"></td>
+				<td><input class="form-control" type="text" id="" name="homepage" value="blog.naver.com/~~"></td>
 				<th class="text-center table-success">희망 직업</th>
-				<td><input type="text" id="" name="jobSeek" value="개발자"></td>
+				<td><input class="form-control" type="text" id="" name="jobSeek" value="개발자"></td>
 			</tr>
 			<tr>
 				<th class="text-center table-success">취미</th>
@@ -264,19 +285,19 @@
 			</tr>
 			<tr>
 				<th class="text-center table-success">1</th>
-				<td><input type="text" id="" name="projectName1" value="웹"></td>
+				<td><input class="form-control" type="text" id="" name="projectName1" value="웹"></td>
 				<td>시작일 : <input type="month" id="" name="term1s" value="2020-08"> ~ 종료일 : <input type="month" id=""
 					name="term1e" value="2021-01"></td>
 				<td><textarea id="" name="contents1" rows="6" cols="30" placeholder="여기에 내용을 입력하세요.">웹 개발</textarea></td>
-				<td><input type="text" id="" name="buyer1" value="자체개발"></td>
+				<td><input class="form-control" type="text" id="" name="buyer1" value="자체개발"></td>
 			</tr>
 			<tr>
 				<th class="text-center table-success">2</th>
-				<td><input type="text" id="" name="projectName2" value="안드로이드"></td>
+				<td><input class="form-control" type="text" id="" name="projectName2" value="안드로이드"></td>
 				<td>시작일 : <input type="month" id="" name="term2s" value="2021-02"> ~ 종료일 : <input type="month" id=""
 					name="term2e" value="2022-01"></td>
 				<td><textarea id="" name="contents2" rows="6" cols="30" placeholder="여기에 내용을 입력하세요.">안드로이드 개발</textarea></td>
-				<td><input type="text" id="" name="buyer2" value="자체개발"></td>
+				<td><input class="form-control" type="text" id="" name="buyer2" value="자체개발"></td>
 			</tr>
 
 		</table>
