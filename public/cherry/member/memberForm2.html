@@ -1,0 +1,448 @@
+<!DOCTYPE HTML>
+<html lang="kor">
+
+<head>
+<meta charset="uTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Yun html projects memberView</title>
+
+<style type="text/css">
+</style>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+	integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+<script>
+        const add_textbox = () => {
+            const box = document.getElementById("box");
+            const newP = document.createElement('p');
+            newP.innerHTML = 
+				
+		
+            "<input class='form-control' type='text'> <input class='btn btn-danger' type='button' value='삭제' onclick='remove(this)'>";
+            	
+            box.appendChild(newP);
+        }
+        const remove = (obj) => {
+            document.getElementById('box').removeChild(obj.parentNode);
+        }
+</script>
+
+</head>
+
+<body class="container">
+
+	<div class="row align-items-center">
+		<div class="badge bg-success text-wrap" style="width: 24rem;">
+			<b style="font-size: 40px; align-self: center;">회원등록</b>
+		</div>
+	</div>
+
+			<form action="" method="get" id="" name="memberRegisterForm" enctype="multipart/form-data">
+
+				<div class="accordion" id="accordionPanelsStayOpenExample">
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="panelsStayOpen-headingOne">
+							<button class="accordion-button" type="button" data-bs-toggle="collapse"
+								data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+								기본정보</button>
+						</h2>
+						<div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+							aria-labelledby="panelsStayOpen-headingOne">
+							<div class="accordion-body">
+
+								<table class="table caption-top table-hover table-bordered border-secondary table-sm align-middle">
+									<caption class="text-center">
+										<div class="badge bg-success text-wrap" style="width: 12rem;">
+											<b style="font-size: 30px; align-self: center;">기본정보</b>
+										</div>
+									</caption>
+									<tr>
+										<th class="text-center table-success">이름</th>
+										<td><input class="form-control" type="text" placeholder="이름을 입력하세요" id="" name="name"></td>
+										<th class="text-center table-success">성별</th>
+										<td>
+
+											<div class="form-check form-check-inline">
+												<input class="form-check-input" type="radio" name="gender" id="male"> <label
+													class="form-check-label" for="male"> 남 </label>
+											</div>
+											<div class="form-check form-check-inline">
+												<input class="form-check-input" type="radio" name="gender" id="female"> <label
+													class="form-check-label" for="female"> 여 </label>
+											</div>
+
+										</td>
+									</tr>
+									<tr>
+										<th class="text-center table-success">아이디</th>
+										<td><input class="form-control" type="text" placeholder="아이디를 입력하세요" id="" name="id"></td>
+										<th class="text-center table-success">비밀번호</th>
+										<td><div class="row g-3 align-items-center">
+												<div class="col-auto">
+													<input type="password" class="form-control" aria-describedby="passwordHelpInline">
+												</div>
+												<div class="col-auto">
+													<span class="form-text"> Must be 8-20 characters long. </span>
+												</div>
+											</div></td>
+									</tr>
+									<tr>
+										<th class="text-center table-success">생년월일</th>
+										<td><input type="date" id="" name="birthDate"></td>
+										<th class="text-center table-success">국적</th>
+										<td><select class="form-select" id="" name="country">
+												<option>대한민국</option>
+												<option>미국</option>
+												<option>일본</option>
+												<option>영국</option>
+												<option>프랑스</option>
+												<option>이탈리아</option>
+												<option>중국</option>
+										</select></td>
+									</tr>
+									<tr>
+										<th class="text-center table-success">주소</th>
+										<td colspan="3">
+											<button class="btn btn-outline-secondary" type="button" id="button-addon1" data-bs-toggle="modal"
+												data-bs-target="#exampleModal">주소 찾기</button> <!--MODAL -->
+											<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+												aria-hidden="true">
+												<div class="modal-dialog modal-dialog-centered">
+													<div class="modal-content">
+														<div class="modal-header">
+															<h5 class="modal-title" id="exampleModalLabel">주소 검색</h5>
+															<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+														</div>
+														<div class="modal-body">
+															<h3 style="text-align: center">주소 검색</h3>
+															<br> <br>
+															<div class="input-group mb-3">
+																<input class="form-control form-control-lg" type="text" placeholder="주소 입력"> <br> <a
+																	href="https://map.naver.com/v5" class="btn btn-outline-secondary" role="button" id="button-addon2">검색</a>
+															</div>
+															<p>도로명, 건물명 또는 지번 중 편한 방법으로 검색하세요.</p>
+															<p>예) 건물명 : 방배동 우성아파트</p>
+															<p>도로명 : 테헤란로 152</p>
+															<p>지역번 : 역삼동 737</p>
+														</div>
+														<div class="modal-footer">
+															<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
+															<button type="button" class="btn btn-primary">확인</button>
+														</div>
+													</div>
+												</div>
+											</div> <!-- MODAL END --> <input class="form-control" type="text" placeholder="주소를 입력하세요" id="" name="address">
+										</td>
+									</tr>
+									<tr>
+										<th class="text-center table-success">모바일</th>
+										<td><select id="" name="carrier">
+												<option>SKT
+												<option>KT
+												<option>LG
+										</select> <input type="text" id="" name="phone1" size="3"> - <input type="text" id="" name="phone2" size="4">
+											- <input type="text" id="" name="phone3" size="4"></td>
+										<th class="text-center table-success">모바일 마케팅 수신 동의</th>
+										<td>
+											<!-- <input type="radio" id="" name="mobile_marketing" value="1">예 <input type="radio" id=""
+					name="mobile_marketing" value="2">아니오 -->
+
+											<div class="form-check form-switch">
+												<input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+											</div>
+
+										</td>
+									</tr>
+									<tr>
+										<th class="text-center table-success">전화번호</th>
+										<td>
+											<!-- <select id="" name="homeNumber1">
+
+						<option>02
+						<option>031
+						<option>032
+						<option>033
+						<option>041
+						<option>042
+						<option>043
+						<option>044
+						<option>051
+						<option>052
+						<option>053
+						<option>054
+						<option>055
+						<option>061
+						<option>062
+						<option>063
+						<option>064
+				</select> -->
+											<div class="row">
+												<div class="col-auto">
+													<input class="form-control form-control-inline" list="datalistOptions" id="exampleDataList"
+														placeholder="Type to search...">
+													<datalist id="datalistOptions">
+														<option value="02">
+														<option value="031">
+														<option value="032">
+														<option value="033">
+														<option value="041">
+														<option value="042">
+														<option value="043">
+														<option value="044">
+														<option value="051">
+														<option value="052">
+														<option value="053">
+														<option value="054">
+														<option value="055">
+														<option value="061">
+														<option value="062">
+														<option value="063">
+														<option value="064">
+													</datalist>
+												</div>
+												-
+												<div class="col-auto">
+													<input type="text" id="" name="homeNumber2" size="3">
+												</div>
+												-
+												<div class="col-auto">
+													<input type="text" id="" name="homeNumber3" size="4">
+												</div>
+											</div>
+										</td>
+										<th class="text-center table-success">팩스번호</th>
+										<td><input class="form-control" type="text" id="" name="faxNumber"></td>
+
+									</tr>
+									<tr>
+										<th class="text-center table-success">이메일</th>
+										<td><input type="email" id="" name="email" placeholder="abcd@naver.com"></td>
+										<th class="text-center table-success">이메일 마케팅 수신 동의</th>
+										<td><input type="radio" id="" name="email_marketing" value="1">예 <input type="radio" id=""
+											name="email_marketing" value="2">아니오</td>
+
+									</tr>
+
+									<tr>
+										<th class="text-center table-success">추천인</th>
+										<td colspan="3">
+											<div id="box" class="row g-3">
+												<div class="col-11">
+													<input class="form-control col-5" type="text">
+												</div>
+												<input class="btn btn-success col-auto" type="button" value="추가" onclick="add_textbox()">
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th class="text-center table-success">비밀번호 문제</th>
+										<td><select class="form-select" id="" name="pwQuestion">
+												<option>나의 보물 1호는?</option>
+												<option>나의 고향은?</option>
+												<option>내가 키우는 애완동물의 이름은?</option>
+												<option>가장 친한 친구 이름은?</option>
+										</select></td>
+										<th class="text-center table-success">비밀번호 답</th>
+										<td><input class="form-control" type="text" id="" name="pwAnswer"></td>
+									</tr>
+
+
+									<tr>
+										<th class="text-center table-success">sns</th>
+										<td>
+											<!-- <select id="" name="sns"><option>insta</option>
+						<option>facebook</option>
+						<option>twitter</option></select> <input type="text" id="snsText" name="snsText">
+				 -->
+											<div class="input-group">
+												<div class="input-group-text">
+													<input class="form-check-input mt-0" type="checkbox" value=""
+														aria-label="Checkbox for following text input">
+												</div>
+												<div>
+													<img src="./sns_icon/icon_round_facebook_48.png" title="Facebook">
+												</div>
+												<input type="text" class="form-control" aria-label="Text input with checkbox">
+											</div>
+
+											<div class="input-group">
+												<div class="input-group-text">
+													<input class="form-check-input mt-0" type="checkbox" value="">
+												</div>
+												<div>
+													<img src="./sns_icon/icon_round_instgram_48.png" title="Instagram">
+												</div>
+												<input type="text" class="form-control" aria-label="Text input with radio button">
+											</div>
+
+											<div class="input-group">
+												<div class="input-group-text">
+													<input class="form-check-input mt-0" type="checkbox" value="">
+												</div>
+												<div>
+													<img src="./sns_icon/icon_round_kakaotalk_48.png" title="Kakao">
+												</div>
+												<input type="text" class="form-control" aria-label="Text input with radio button">
+											</div>
+
+											<div class="input-group">
+												<div class="input-group-text">
+													<input class="form-check-input mt-0" type="checkbox" value="">
+												</div>
+												<div>
+													<img src="./sns_icon/icon_round_twitter_48.png" title="Twitter">
+												</div>
+												<input type="text" class="form-control" aria-label="Text input with radio button">
+											</div>
+
+											<div class="input-group">
+												<div class="input-group-text">
+													<input class="form-check-input mt-0" type="checkbox" value="">
+												</div>
+												<div>
+													<img src="./sns_icon/icon_round_youtube_48.png" title="Youtube">
+												</div>
+												<input type="text" class="form-control" aria-label="Text input with radio button">
+											</div>
+
+										</td>
+										<th class="text-center table-success">사진</th>
+										<td><input class="form-control-file" type="file" id="" name="photo" accept=".jpg,.png"></td>
+									</tr>
+									<tr>
+										<th class="text-center table-success">홈페이지</th>
+										<td><input class="form-control" type="text" id="" name="homepage"></td>
+										<th class="text-center table-success">희망 직업</th>
+										<td><input class="form-control" type="text" id="" name="jobSeek"></td>
+									</tr>
+									<tr>
+										<th class="text-center table-success">취미</th>
+
+										<td colspan="3"><input type="checkbox" class="btn-check" id="btn-check-outlined1" autocomplete="off">
+											<label class="btn btn-outline-success" for="btn-check-outlined1">영화시청</label><input type="checkbox"
+											class="btn-check" id="btn-check-outlined2" autocomplete="off"> <label class="btn btn-outline-success"
+											for="btn-check-outlined2">스마트폰</label><input type="checkbox" class="btn-check" id="btn-check-outlined3"
+											autocomplete="off"> <label class="btn btn-outline-success" for="btn-check-outlined3">독서</label><input
+											type="checkbox" class="btn-check" id="btn-check-outlined4" autocomplete="off"> <label
+											class="btn btn-outline-success" for="btn-check-outlined4">쇼핑</label><input type="checkbox" class="btn-check"
+											id="btn-check-outlined5" autocomplete="off"> <label class="btn btn-outline-success"
+											for="btn-check-outlined5">캠핑</label><input type="checkbox" class="btn-check" id="btn-check-outlined6"
+											autocomplete="off"> <label class="btn btn-outline-success" for="btn-check-outlined6">음악감상</label><input
+											type="checkbox" class="btn-check" id="btn-check-outlined7" autocomplete="off"> <label
+											class="btn btn-outline-success" for="btn-check-outlined7">악기연주</label> <br> <input type="checkbox"
+											class="btn-check" id="btn-check-outlined8" autocomplete="off"> <label class="btn btn-outline-success"
+											for="btn-check-outlined8">보드게임</label><input type="checkbox" class="btn-check" id="btn-check-outlined9"
+											autocomplete="off"> <label class="btn btn-outline-success" for="btn-check-outlined9">조깅</label><input
+											type="checkbox" class="btn-check" id="btn-check-outlined10" autocomplete="off"> <label
+											class="btn btn-outline-success" for="btn-check-outlined10">바느질</label><input type="checkbox"
+											class="btn-check" id="btn-check-outlined11" autocomplete="off"> <label
+											class="btn btn-outline-success" for="btn-check-outlined11">맛집탐방</label><input type="checkbox"
+											class="btn-check" id="btn-check-outlined12" autocomplete="off"> <label
+											class="btn btn-outline-success" for="btn-check-outlined12">스포츠</label><input type="checkbox"
+											class="btn-check" id="btn-check-outlined13" autocomplete="off"> <label
+											class="btn btn-outline-success" for="btn-check-outlined13">기타</label></td>
+
+										<!-- <td colspan="3"><input type="checkbox" id="" name="hobby" value="movie">영화시청 <input type="checkbox"
+					id="" name="hobby" value="smartphone">스마트폰 <input type="checkbox" id="" name="hobby" value="reading">독서
+					<input type="checkbox" id="" name="hobby" value="shopping">쇼핑 <input type="checkbox" id="" name="hobby"
+					value="camping">캠핑 <input type="checkbox" id="" name="hobby" value="music">음악감상 <input
+					type="checkbox" id="" name="hobby" value="instrument">악기연주 <br> <input type="checkbox" id=""
+					name="hobby" value="boardgame">보드게임 <input type="checkbox" id="" name="hobby" value="jog">조깅 <input
+					type="checkbox" id="" name="hobby" value="sow">바느질 <input type="checkbox" id="" name="hobby"
+					value="foodtour">맛집탐방 <input type="checkbox" id="" name="hobby" value="sports">스포츠 <input
+					type="checkbox" id="" name="hobby" value="else">기타</td> -->
+
+									</tr>
+									<tr>
+										<th class="text-center table-success">결혼여부</th>
+										<td><input type="radio" id="" name="marriage" value="1">예 <input type="radio" id=""
+											name="marriage" value="2">아니오</td>
+										<th class="text-center table-success">결혼기념일</th>
+										<td>-</td>
+									</tr>
+									<tr>
+										<th class="text-center table-success">자녀유무</th>
+										<td><input type="radio" id="" name="child" value="1">예<input type="radio" id="" name="child"
+											value="2">아니오</td>
+
+										<th class="text-center table-success">좋아하는 색깔</th>
+										<td><input class="form-control form-control-color" type="color" id="" name="color" title="좋아하는 색을 골라주세요"></td>
+									</tr>
+									<tr>
+										<th class="text-center table-success">본인 소개</th>
+										<td colspan="3"><textarea class="form-control" id="" name="introduce" rows="5" cols="110"
+												placeholder="여기에 본인 소개를 작성해주세요."></textarea></td>
+									</tr>
+									<tr>
+										<th class="text-center table-success">개인정보유효기간</th>
+										<td colspan="3"><select class="form-select" id="" name="expireDate">
+												<option>1년</option>
+												<option>3년</option>
+												<option>5년</option>
+												<option>10년</option>
+										</select></td>
+									</tr>
+								</table>
+
+
+							</div>
+						</div>
+					</div>
+
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+							<button class="accordion-button" type="button" data-bs-toggle="collapse"
+								data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="true" aria-controls="panelsStayOpen-collapseTwo">
+								프로젝트</button>
+						</h2>
+						<div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show"
+							aria-labelledby="panelsStayOpen-headingOne">
+							<div class="accordion-body">
+								<table class="table caption-top table-hover table-bordered border-secondary table-sm align-middle">
+									<caption class="text-center">
+										<div class="badge bg-success text-wrap" style="width: 12rem;">
+											<b style="font-size: 30px; align-self: center;">프로젝트</b>
+										</div>
+									</caption>
+									<tr>
+										<th class="text-center table-success">번호</th>
+										<th class="text-center table-success">프로젝트명</th>
+										<th class="text-center table-success">기간</th>
+										<th class="text-center table-success">프로젝트 내용</th>
+										<th class="text-center table-success">발주처</th>
+									</tr>
+									<tr>
+										<th class="text-center table-success">1</th>
+										<td><input class="form-control" type="text" id="" name="projectName1"></td>
+										<td>시작일 : <input type="month" id="" name="term1S" value="2022-01"> ~ 종료일 : <input type="month"
+											id="" name="term1E" value="2022-01"></td>
+										<td><textarea class="form-control" id="" name="contents1" rows="6" cols="30" placeholder="여기에 내용을 입력하세요."></textarea></td>
+										<td><input class="form-control" type="text" id="" name="buyer1"></td>
+									</tr>
+									<tr>
+										<th class="text-center table-success">2</th>
+										<td><input class="form-control" type="text" id="" name="projectName2"></td>
+										<td>시작일 : <input type="month" id="" name="term2S" value="2022-01"> ~ 종료일 : <input type="month"
+											id="" name="term2E" value="2022-01"></td>
+										<td><textarea class="form-control" id="" name="contents2" rows="6" cols="30" placeholder="여기에 내용을 입력하세요."></textarea></td>
+										<td><input class="form-control" type="text" id="" name="buyer2"></td>
+									</tr>
+
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</form>
+
+			<br>
+			<div class="d-grid gap-2 d-md-flex justify-content-md-end">
+				<a class="btn btn-success" href="./memberList.html" role="button">목록</a>
+			</div>
+
+			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+				integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
