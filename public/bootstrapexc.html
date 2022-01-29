@@ -19,21 +19,17 @@ a {
 <body>
 
 
-	<script type="text/javascript">
-function showfield(name){
-  if(name=='Other')document.getElementById('div1').innerHTML='Other: <input type="text" name="other" />';
-  else document.getElementById('div1').innerHTML='';
-}
-</script>
+	<div class="row">
+		<div class="col-6">111</div>
 
-	<select name="travel_arriveVia" id="travel_arriveVia" onchange="showfield(this.options[this.selectedIndex].value)">
-<option selected="selected">Please select ...</option>
-<option value="Plane">Plane</option>
-<option value="Train">Train</option>
-<option value="Own Vehicle">Own Vehicle</option>
-<option value="Other">Other</option>
-</select>
-<div id="div1"></div>
+		<div class="col-6">
+			<div class="row">
+				<div class="col-6 bg-primary">111</div>
+				<div class="col-6 bg-success">111</div>
+			</div>
+		</div>
+	</div>
+
 
 
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
