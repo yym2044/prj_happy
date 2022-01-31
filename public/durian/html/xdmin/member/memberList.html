@@ -98,6 +98,9 @@
 				</div>
 			</div>
 			<br> <br>
+
+			<!-- 테이블 -->
+
 			<div class="border mb-2">
 				<div class="row bg-dark text-light">
 					<div class="col">
@@ -184,7 +187,91 @@
 					<div class="col"></div>
 				</div>
 			</div>
-<br>
+
+
+			<br> <br>
+			<div class="table-responsive">
+				<table class="table table-hover">
+					<thead>
+						<tr>
+							<th><input type="checkbox" name="checkbox1" onclick="selectAll(this)"></th>
+							<th>#</th>
+							<th>Firstname</th>
+							<th>Lastname</th>
+							<th>Age</th>
+							<th>City</th>
+							<th>Country</th>
+							<th>Sex</th>
+							<th>Example</th>
+							<th>Example</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><input type="checkbox" name="checkbox1"></td>
+							<td>1</td>
+							<td>영민</td>
+							<td>윤</td>
+							<td>27</td>
+							<td>경기도</td>
+							<td>대한민국</td>
+							<td>남</td>
+							<td>Yes</td>
+							<td>Yes</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="checkbox1"></td>
+							<td>2</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="checkbox1"></td>
+							<td>3</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="checkbox1"></td>
+							<td>4</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="checkbox1"></td>
+							<td>5</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<br>
 			<nav>
 				<ul class="pagination justify-content-center">
 					<li class="page-item"><a class="page-link" href="#"><<</a></li>
@@ -201,8 +288,8 @@
 
 			<div class="row">
 				<div class="col-1 ms-1 p-0">
-					<a class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteModal">
-						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash"
+					<a class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteModal"> <svg
+							xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash"
 							viewBox="0 0 16 16">
 							  <path
 								d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z" />
@@ -213,8 +300,7 @@
 				</div>
 				<div class="col-9 offset-1 p-0">
 					<div class="text-end">
-						<a class="btn btn-success">
-							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+						<a class="btn btn-success"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
 								class="bi bi-file-earmark-excel" viewBox="0 0 16 16">
 							  <path
 									d="M5.884 6.68a.5.5 0 1 0-.768.64L7.349 10l-2.233 2.68a.5.5 0 0 0 .768.64L8 10.781l2.116 2.54a.5.5 0 0 0 .768-.641L8.651 10l2.233-2.68a.5.5 0 0 0-.768-.64L8 9.219l-2.116-2.54z" />
@@ -225,9 +311,8 @@
 					</div>
 				</div>
 				<div class="col p-0">
-					<a class="btn btn-primary">
-						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-square"
-							viewBox="0 0 16 16">
+					<a class="btn btn-primary" href="./memberForm.html"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+							class="bi bi-plus-square" viewBox="0 0 16 16">
 						  <path
 								d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
 						  <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
@@ -235,39 +320,33 @@
 					</a>
 				</div>
 			</div>
-<br>
-<br>
-<br>
-<br>
+			<br> <br> <br> <br>
 			<div class="row bg-light">
 				<p class="text-center">
-					<br>
-					<br>Copyright © Coupang Corp. 2010-2021 All Rights Reserved.
+					<br> <br>Copyright © Coupang Corp. 2010-2021 All Rights Reserved.
 				</p>
-				<br>
-				<br> <br>
-				<br> <br>
+				<br> <br> <br> <br> <br>
 			</div>
 
 		</div>
 
-<!-- deleteModal -->
+		<!-- deleteModal -->
 
-	<div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-header">
-					<h5 class="modal-title" id="exampleModalLabel">확인창</h5>
-					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-				</div>
-				<div class="modal-body">선택항목을 삭제합니다.</div>
-				<div class="modal-footer">
-					<a class="btn btn-primary" href="./memberList.html" role="button">확인</a>
-					<button type="button" class="btn btn-danger" data-bs-dismiss="modal">취소</button>
+		<div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">확인창</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">선택항목을 삭제합니다.</div>
+					<div class="modal-footer">
+						<a class="btn btn-primary" href="./memberList.html" role="button">확인</a>
+						<button type="button" class="btn btn-danger" data-bs-dismiss="modal">취소</button>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
 
 	</form>
 
