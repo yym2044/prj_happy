@@ -15,22 +15,24 @@
 			<br>
 			
 			<div class="row">
-				<div class="col-12 col-sm-2">
+				<div class="col-6 col-md-2">
 					<img src="../../../images/xdmin/coupang.png" class="img-fluid">
 				</div>
-				<div class="col-12 col-sm-5 fs-4 mb-2">Coupang Management System</div>
+				<div class="col-6 col-md-5 fs-4 mb-2">Coupang Management System</div>
 				
 				<!-- 
-				<div class="col-12 col-sm-2 fs-6 mb-2">
+				<div class="col-12 col-md-2 fs-6 mb-2">
 					<img src="../../../images/xdmin/user.png" style="width: 50px;">
-					<a href="#">프로필</a>
+					<div class="row">
+							<a href="#">프로필</a>
+					</div>	
 				</div>
 				 -->
 				 
-				 <div class="col-12 col-sm-1 mb-2 p-0 text-end">
-					<img src="../../../images/xdmin/user.png" style="width: 50px;" class="rounded-circle">
+				 <div class="col-2 col-md-1 mb-2 p-0 text-end pe-2">
+					<img src="../../../images/xdmin/lee.jpg" style="width: 40px; height: 50px;" class="rounded-circle border border-5">
 				 </div>
-				 <div class="col-12 col-sm-1 mb-2">
+				 <div class="col-4 col-md-1 mb-2">
 				 	<div class="row">
 				 	Yun (CEO)
 				 	</div>
@@ -39,14 +41,17 @@
 				 	</div>
 				 </div>
 				 
-				<div class="col-6 col-sm-1 mb-2">
+				<div class="col-3 col-md-1 mb-2">
 					<select class="form-select">
 						<option>언어</option>
+						<option>한국어</option>
+						<option>Eng</option>
+						<option>日本語</option>
 					</select>
 				</div>
-				<div class="col-6 col-sm-2 text-end">
+				<div class="col-3 col-md-2 text-end">
 				
-				<button class="btn btn-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNavbar">
+				<button class="btn btn-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNavbar"> 
 					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list"
 						viewBox="0 0 16 16">
 			  		<path fill-rule="evenodd"
@@ -57,8 +62,7 @@
 				
 				</div>
 			</div>
-
-			<div class="row collapse" id="collapseNavbar">
+			<div class="row collapse show" id="collapseNavbar">
 				<ul class="nav bg-secondary">
 					<li class="nav-item"><a class="nav-link link-light" href="#">Home</a></li>
 					<li class="nav-item"><a class="nav-link link-light" href="#">Features</a></li>
@@ -123,33 +127,19 @@
 					<input type="text" class="form-control my-2" placeholder="도로명 주소" disabled> <input type="text"
 						class="form-control my-2" placeholder="상세 주소">
 				</div>
+				
 
 			</div>
 
-
-			<div class="row mt-3">
-				<div class="col-12 col-sm-3">
-					최종수정자 <input type="text" class="form-control my-2" value="장원영" disabled>
-				</div>
-				<div class="col-12 col-sm-3">
-					최종수정일 <input class="form-control my-2" value="2021.01.01 12:12:12" disabled>
-				</div>
-				<div class="col-12 col-sm-3">
-					최초등록자 <input class="form-control my-2" value="장원영" disabled>
-				</div>
-				<div class="col-12 col-sm-3">
-					최초등록일 <input class="form-control my-2" value="2021.01.01 12:12:12" disabled>
-				</div>
-			</div>
 
 			<div class="row mt-3">
 				<div class="col-12 col-sm-6">
 					설명
-					<textarea class="form-control my-2"></textarea>
+					<textarea class="form-control my-2" placeholder="설명"></textarea>
 				</div>
 
 			</div>
-
+			<!-- 
 			<div class="row mt-3">
 				<div class="col-12 col-sm-6">
 					약관동의
@@ -163,8 +153,53 @@
 					</div>
 				</div>
 			</div>
-
-			<br> <br>
+			--> 			
+			
+			<div class="row mt-3">
+ 				<div class="col-12 col-sm-6">
+ 					약관동의
+		 			<div class="form-check">
+		 				<input class="form-check-input" type="checkbox" id="consentAll" name="termsConsent" onclick="selectAll(this)" checked>
+		 				<label class="form-check-label" for="consentAll">전체 약관동의</label>
+		 			</div>
+		 			<div class="border border-2">
+			 			<div class="form-check">
+			 				<input class="form-check-input" type="checkbox" id="consent1" name="termsConsent" checked>
+			 				<label class="form-check-label" for="consent1">회원가입 및 운영약관 동의 (필수)</label>
+			 			</div>
+		 				<div class="form-check">
+		 					<input class="form-check-input" type="checkbox" id="consent2" name="termsConsent" checked>
+		 					<label class="form-check-label" for="consent2">개인정보 수집 및 이용 동의 (필수)</label>
+		 				</div>
+		 				<div class="form-check">
+		 					<input class="form-check-input" type="checkbox" id="consent3" name="termsConsent" checked>
+		 					<label class="form-check-label" for="consent3">이메일 정보 마케팅 사용 동의 (선택)</label>
+		 				</div>
+		 				<div class="form-check">
+		 					<input class="form-check-input" type="checkbox" id="consent4" name="termsConsent" checked>
+		 					<label class="form-check-label" for="consent4">휴대전화 정보 마케팅 사용 동의 (선택)</label>
+		 				</div>
+		 			
+		 			</div>
+ 				</div>
+ 			</div>
+ 			
+ 			<div class="row mt-3">
+				<div class="col-12 col-sm-3">
+					최종수정자 <input type="text" class="form-control my-2" value="장원영" disabled>
+				</div>
+				<div class="col-12 col-sm-3">
+					최종수정일 <input class="form-control my-2" value="2021.01.01 12:12:12" disabled>
+				</div>
+				<div class="col-12 col-sm-3">
+					최초등록자 <input class="form-control my-2" value="장원영" disabled>
+				</div>
+				<div class="col-12 col-sm-3">
+					최초등록일 <input class="form-control my-2" value="2021.01.01 12:12:12" disabled>
+				</div>
+			</div>
+ 			
+ 			<br> <br>
 			<nav>
 				<ul class="pagination justify-content-center">
 					<li class="page-item"><a class="page-link" href="./memberForm.html">1</a></li>
@@ -198,8 +233,8 @@
 					<h3 style="text-align: center">우편번호 검색</h3>
 					<br> <br>
 					<div class="input-group mb-3">
-						<input class="form-control form-control-lg" type="text" placeholder="주소 입력"> <br> <a
-							href="https://map.naver.com/v5" class="btn btn-outline-secondary" role="button" id="button-addon2">검색</a>
+						<input class="form-control form-control-lg" type="text" placeholder="주소 입력"> <br> 
+						<a href="https://map.naver.com/v5" class="btn btn-outline-secondary" role="button" id="button-addon2">검색</a>
 					</div>
 					<p>도로명, 건물명 또는 지번 중 편한 방법으로 검색하세요.</p>
 					<p>예) 건물명 : 방배동 우성아파트</p>

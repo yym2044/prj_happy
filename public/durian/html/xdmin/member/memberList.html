@@ -6,6 +6,9 @@
 <title>회원목록</title>
 <link rel="stylesheet" href="../../../bootstrap/bootstrap-5.1.3-dist/css/bootstrap.min.css">
 
+
+
+
 </head>
 
 <body>
@@ -15,52 +18,51 @@
 		<div class="container-fluid bg-light">
 			<br>
 			<div class="row">
-				<div class="col-12 col-sm-2">
+				<div class="col-6 col-md-2">
 					<img src="../../../images/xdmin/coupang.png" class="img-fluid">
 				</div>
-				<div class="col-12 col-sm-5 fs-4 mb-2">Coupang Management System</div>
-				
+				<div class="col-6 col-md-5 fs-4 mb-2">Coupang Management System</div>
+
 				<!-- 
-				<div class="col-12 col-sm-2 fs-6 mb-2">
+				<div class="col-12 col-md-2 fs-6 mb-2">
 					<img src="../../../images/xdmin/user.png" style="width: 50px;">
 					<div class="row">
 							<a href="#">프로필</a>
 					</div>	
 				</div>
 				 -->
-				 
-				 <div class="col-12 col-sm-1 mb-2 p-0 text-end">
-					<img src="../../../images/xdmin/user.png" style="width: 50px;" class="rounded-circle">
-				 </div>
-				 <div class="col-12 col-sm-1 mb-2">
-				 	<div class="row">
-				 	Yun (CEO)
-				 	</div>
-				 	<div class="row">
-				 	Administrator
-				 	</div>
-				 </div>
-				 
-				<div class="col-6 col-sm-1 mb-2">
+
+				<div class="col-2 col-md-1 mb-2 p-0 text-end pe-2">
+					<img src="../../../images/xdmin/lee.jpg" style="width: 40px; height: 50px;" class="rounded-circle border border-5">
+				</div>
+				<div class="col-4 col-md-1 mb-2">
+					<div class="row">Yun (CEO)</div>
+					<div class="row">Administrator</div>
+				</div>
+
+				<div class="col-3 col-md-1 mb-2">
 					<select class="form-select">
 						<option>언어</option>
+						<option>한국어</option>
+						<option>Eng</option>
+						<option>日本語</option>
 					</select>
 				</div>
-				<div class="col-6 col-sm-2 text-end">
-				
-				<button class="btn btn-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNavbar">
-					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list"
-						viewBox="0 0 16 16">
+				<div class="col-3 col-md-2 text-end">
+
+					<button class="btn btn-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNavbar">
+						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list"
+							viewBox="0 0 16 16">
 			  		<path fill-rule="evenodd"
-							d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+								d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
 					</svg>
-				</button>
-	
-				
+					</button>
+
+
 				</div>
 			</div>
-			
-			<div class="row collapse" id="collapseNavbar">
+
+			<div class="row collapse show" id="collapseNavbar">
 				<ul class="nav bg-secondary">
 					<li class="nav-item"><a class="nav-link link-light" href="#">Home</a></li>
 					<li class="nav-item"><a class="nav-link link-light" href="#">Features</a></li>
@@ -78,33 +80,40 @@
 				</ul>
 			</div>
 			 -->
-			 </div>
-			 <div class="container-fluid">
+		</div>
+		<div class="container-fluid">
 			<br>
 			<div class="fs-3">Code</div>
 			<div class="row border m-2">
 				<div class="row mb-2">
-					<div class="col-sm-2 p-2 pt-3">
+					<div class="col-md-2 p-2 pt-3">
 						<select class="form-select"><option selected>삭제여부</option>
 						</select>
 					</div>
-					<div class="col-sm-2 p-2 pt-3">
+					<div class="col-md-2 p-2 pt-3">
 						<select class="form-select"><option selected>날짜</option>
 						</select>
 					</div>
-					<div class="col-sm-2 p-2 pt-3">
+					<div class="col-md-2 p-2 pt-3">
 						<input class="form-control" placeholder="시작일">
 					</div>
-					<div class="col-sm-2 p-2 pt-3">
+					<div class="col-md-2 p-2 pt-3">
 						<input class="form-control" placeholder="종료일">
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-sm-2 p-2 pb-3">
-						<select class="form-select"><option selected disabled>검색구분</option>
+					<div class="col-md-2 p-2 pb-3">
+						<select class="form-select">
+							<option selected disabled>검색구분</option>
+							<option>Firstname</option>
+							<option>Lastname</option>
+							<option>Age</option>
+							<option>City</option>
+							<option>Country</option>
+							<option>Sex</option>
 						</select>
 					</div>
-					<div class="col-sm-2 p-2 pb-3">
+					<div class="col-md-2 p-2 pb-3">
 						<input class="form-control" placeholder="검색어">
 					</div>
 					<div class="col">
@@ -130,18 +139,39 @@
 			</div>
 
 
-			<br>
-			<div class="row row-cols-2">
-				<div class="text-start">
-					<div class="col-6 ms-1">Total : 12,345</div>
+			<br> <br>
+			<div class="row">
+				<div class="col-8 col-md-3 ms-3 border border-2 p-1">검색결과 : 13 / 총 13명 검색결과</div>
+				<div class="col-1 col-md-1 ms-1">
+					<a class="btn btn-success"> 
+						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+							class="bi bi-file-earmark-excel" viewBox="0 0 16 16">
+						  <path
+							d="M5.884 6.68a.5.5 0 1 0-.768.64L7.349 10l-2.233 2.68a.5.5 0 0 0 .768.64L8 10.781l2.116 2.54a.5.5 0 0 0 .768-.641L8.651 10l2.233-2.68a.5.5 0 0 0-.768-.64L8 9.219l-2.116-2.54z" />
+						  <path
+							d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z" />
+						</svg>
+					</a>
 				</div>
-				<div class="text-end">
-					<div class="col-12">
-						<select><option>10</select>
+				<div class="col-12 col-md-7 ms-1 me-0 my-1">
+					<div class="text-end">
+						<div class="btn-group btn-group-sm" role="group">
+							<input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" disabled> 
+							<label class="btn btn-outline-secondary" for="btnradio1">view</label>
+							<input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" checked> 
+							<label class="btn btn-outline-secondary" for="btnradio2">5</label> 
+							<input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off"> 
+							<label class="btn btn-outline-secondary" for="btnradio3">10</label>
+							<input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off"> 
+							<label class="btn btn-outline-secondary" for="btnradio3">20</label>
+							<input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off"> 
+							<label class="btn btn-outline-secondary" for="btnradio3">50</label>
+							<input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off"> 
+							<label class="btn btn-outline-secondary" for="btnradio3">100</label>
+						</div>
 					</div>
 				</div>
 			</div>
-			<br> <br>
 
 			<!-- 테이블 -->
 			<!-- 
@@ -233,7 +263,10 @@
 			</div>
 
  -->
-			<br> <br>
+
+
+
+
 			<div class="table-responsive">
 				<table class="table table-hover">
 					<thead>
@@ -315,7 +348,26 @@
 				</table>
 			</div>
 
-			<br>
+
+			<div class="row ps-1">
+				<div class="col-1 ms-1 p-0">
+					<a class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteModal"> <svg
+							xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash"
+							viewBox="0 0 16 16">
+							  <path
+								d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z" />
+							  <path fill-rule="evenodd"
+								d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z" />
+							</svg>
+					</a> <a class="btn btn-primary" href="./memberForm.html"> <svg xmlns="http://www.w3.org/2000/svg" width="16"
+							height="16" fill="currentColor" class="bi bi-plus-square" viewBox="0 0 16 16">
+						  <path
+								d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+						  <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+						</svg>
+					</a>
+				</div>
+			</div>
 			<nav>
 				<ul class="pagination justify-content-center">
 					<li class="page-item disabled"><a class="page-link" href="#"><<</a></li>
@@ -329,41 +381,6 @@
 					<li class="page-item"><a class="page-link" href="#">>></a></li>
 				</ul>
 			</nav>
-
-			<div class="row">
-				<div class="col-1 ms-1 p-0">
-					<a class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteModal"> <svg
-							xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash"
-							viewBox="0 0 16 16">
-							  <path
-								d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z" />
-							  <path fill-rule="evenodd"
-								d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z" />
-							</svg>
-					</a>
-				</div>
-				<div class="col-9 offset-1 p-0">
-					<div class="text-end">
-						<a class="btn btn-success"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-								class="bi bi-file-earmark-excel" viewBox="0 0 16 16">
-							  <path
-									d="M5.884 6.68a.5.5 0 1 0-.768.64L7.349 10l-2.233 2.68a.5.5 0 0 0 .768.64L8 10.781l2.116 2.54a.5.5 0 0 0 .768-.641L8.651 10l2.233-2.68a.5.5 0 0 0-.768-.64L8 9.219l-2.116-2.54z" />
-							  <path
-									d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z" />
-							</svg>
-						</a>
-					</div>
-				</div>
-				<div class="col p-0">
-					<a class="btn btn-primary" href="./memberForm.html"> <svg xmlns="http://www.w3.org/2000/svg" width="16"
-							height="16" fill="currentColor" class="bi bi-plus-square" viewBox="0 0 16 16">
-						  <path
-								d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
-						  <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
-						</svg>
-					</a>
-				</div>
-			</div>
 			<br> <br> <br> <br>
 			<div class="row bg-light">
 				<p class="text-center">
