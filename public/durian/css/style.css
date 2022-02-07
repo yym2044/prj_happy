@@ -1,0 +1,25 @@
+
+.width90 {
+	width: 90%;
+	margin: auto;
+}
+.width95 {
+	width: 95%;
+	margin: auto;
+}
+.width92 {
+	width: 92%;
+	margin: auto;
+}
+
+.box-white {
+	
+	background-color: white;
+	
+}
+
+th, td {
+	
+	text-align: center;
+	
+}
