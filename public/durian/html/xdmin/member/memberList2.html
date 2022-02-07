@@ -84,31 +84,32 @@
 		<div class="container-fluid">
 			<br>
 			<div class="fs-3">Code</div>
-
+			
 			<div class="row border border-2">
 				<div class="col-9 col-md-9">
+				<br>
 					<div class="row my-2">
 						<div class="col-md-2">회원등급</div>
 						<div class="col-md-10">
 							<div class="form-check-inline">
-								<input type="checkbox" class="form-check-input" id="memberRankAll" name="memberRank" onclick="selectAll(this)"><label
+								<input type="checkbox" class="form-check-input" id="memberRankAll" name="memberRank" onclick="selectAll2(this)"> <label
 									for="memberRankAll" class="form-check-label">전체</label>
 							</div>
 							<div class="form-check-inline">
-								<input type="checkbox" class="form-check-input" id="memberRankResign" name="memberRank"><label
+								<input type="checkbox" class="form-check-input" id="memberRankResign" name="memberRank"> <label
 									for="memberRankResign" class="form-check-label">탈퇴대기자</label>
 							</div>
 							<div class="form-check-inline">
 
-								<input type="checkbox" class="form-check-input" id="memberRankRegister" name="memberRank"><label
+								<input type="checkbox" class="form-check-input" id="memberRankRegister" name="memberRank"> <label
 									for="memberRankRegister" class="form-check-label">가입신청자</label>
 							</div>
 							<div class="form-check-inline">
-								<input type="checkbox" class="form-check-input" id="memberRankGeneral" name="memberRank"><label
+								<input type="checkbox" class="form-check-input" id="memberRankGeneral" name="memberRank"> <label
 									for="memberRankGeneral" class="form-check-label">일반회원</label>
 							</div>
 							<div class="form-check-inline">
-								<input type="checkbox" class="form-check-input" id="memberRankVip" name="memberRank"><label
+								<input type="checkbox" class="form-check-input" id="memberRankVip" name="memberRank"> <label
 									for="memberRankVip" class="form-check-label">VIP회원</label>
 							</div>
 						</div>
@@ -117,11 +118,11 @@
 						<div class="col-md-2">수신동의</div>
 						<div class="col-md-10">
 							<div class="form-check-inline">
-								<input type="checkbox" class="form-check-input" id="consentSms" name=""><label for="consentSms"
+								<input type="checkbox" class="form-check-input" id="consentSms" name=""> <label for="consentSms"
 									class="form-check-label">SMS</label>
 							</div>
 							<div class="form-check-inline">
-								<input type="checkbox" class="form-check-input" id="consentEmail" name=""><label for="consentEmail"
+								<input type="checkbox" class="form-check-input" id="consentEmail" name=""> <label for="consentEmail"
 									class="form-check-label">이메일</label>
 							</div>
 						</div>
@@ -132,17 +133,17 @@
 							
 							<div class="row g-3">
 								<div class="col-md-2">
-									<select class="form-select">
+									<select class="form-select form-select-sm">
 										<option>이름</option>
 										<option>아이디</option>
 									</select>
 								</div>
 								<div class="col-md-5">
-									<input class="form-control" placeholder="검색어">
+									<input class="form-control form-control-sm" placeholder="search..">
 								</div>
 								<div class="col-md">
 									<input type="checkbox" class="form-check-input" id="memberOnline">
-									<label for="memberOnline" class="form-check-label">현재 접속중인 회원만 검색</label>
+									 <label for="memberOnline" class="form-check-label">현재 접속중인 회원만 검색</label>
 								</div>							
 							
 							</div>
@@ -161,7 +162,7 @@
 			<br> <br>
 			<div class="row">
 				<div class="col-8 col-md-3 ms-3 border border-2 p-1">검색결과 : 13 / 총 13명 검색결과</div>
-				<div class="col-1 col-md-1 ms-1">
+				<div class="col-1 col-md-1 ms-1 me-0 p-0">
 					<a class="btn btn-success" type="button" data-bs-toggle="modal" data-bs-target="#excelModal"> <svg
 							xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-excel"
 							viewBox="0 0 16 16">
@@ -289,7 +290,7 @@
 				<table class="table table-hover">
 					<thead>
 						<tr>
-							<th><input type="checkbox" name="checkbox1" onclick="selectAll(this)"></th>
+							<th><input type="checkbox" name="checkbox1" onclick="selectAll1(this)"></th>
 							<th>#</th>
 							<th>Firstname</th>
 							<th>Lastname</th>
@@ -499,24 +500,24 @@
 
 	<script type="text/javascript">
 
-	function selectAll(selectAll) {
+	function selectAll1(selectAll1) {
 		const checkboxes 
 			= document.getElementsByName("checkbox1");
 		
 		checkboxes.forEach((checkbox) => {
-			checkbox.checked = selectAll.checked;
+			checkbox.checked = selectAll1.checked;
 		})
 	}
 	
-	function selectAll(selectAll) {
+	function selectAll2(selectAll2) {
 		const checkboxes 
 			= document.getElementsByName("memberRank");
 		
 		checkboxes.forEach((checkbox) => {
-			checkbox.checked = selectAll.checked;
+			checkbox.checked = selectAll2.checked;
 		})
 	}
-</script>
+	</script>
 
 	<script src="../../../bootstrap/bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
 
