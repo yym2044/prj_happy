@@ -48,7 +48,15 @@
 						<option>日本語</option>
 					</select>
 				</div>
-				<div class="col-3 col-md-2 text-end">
+				<div class="col-3 col-md text-end">
+
+					<button class="btn btn-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling">
+						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list"
+							viewBox="0 0 16 16">
+			  		<path fill-rule="evenodd"
+								d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+					</svg>
+					</button>
 
 					<button class="btn btn-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNavbar">
 						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list"
@@ -61,6 +69,19 @@
 
 				</div>
 			</div>
+			
+			<!-- offcanvas start -->
+			<div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+				id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+				<div class="offcanvas-header">
+					<h5 class="offcanvas-title" id="offcanvasScrollingLabel">Colored with scrolling</h5>
+					<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+				</div>
+				<div class="offcanvas-body">
+					<p>Try scrolling the rest of the page to see this option in action.</p>
+				</div>
+			</div>
+			<!-- offcanvas end -->
 
 			<div class="row collapse show" id="collapseNavbar">
 				<ul class="nav bg-secondary">
@@ -84,15 +105,15 @@
 		<div class="container-fluid">
 			<br>
 			<div class="fs-3">Code</div>
-			
+
 			<div class="row border-top border-bottom border-2 my-2">
 				<div class="col-9 col-md-9">
 					<div class="row my-2 pt-2">
 						<div class="col-md-2">ㆍ회원등급</div>
 						<div class="col-md-10">
 							<div class="form-check-inline">
-								<input type="checkbox" class="form-check-input" id="memberRankAll" name="memberRank" onclick="selectAll2(this)"> <label
-									for="memberRankAll" class="form-check-label">전체</label>
+								<input type="checkbox" class="form-check-input" id="memberRankAll" name="memberRank" onclick="selectAll2(this)">
+								<label for="memberRankAll" class="form-check-label">전체</label>
 							</div>
 							<div class="form-check-inline">
 								<input type="checkbox" class="form-check-input" id="memberRankResign" name="memberRank"> <label
@@ -129,7 +150,7 @@
 					<div class="row my-2 pb-2">
 						<div class="col-md-2">ㆍ검색어</div>
 						<div class="col-md-10">
-							
+
 							<div class="row g-3">
 								<div class="col-md-2">
 									<select class="form-select form-select-sm">
@@ -141,12 +162,12 @@
 									<input class="form-control form-control-sm" placeholder="search..">
 								</div>
 								<div class="col-md">
-									<input type="checkbox" class="form-check-input" id="memberOnline">
-									 <label for="memberOnline" class="form-check-label">현재 접속중인 회원만 검색</label>
-								</div>							
-							
+									<input type="checkbox" class="form-check-input" id="memberOnline"> <label for="memberOnline"
+										class="form-check-label">현재 접속중인 회원만 검색</label>
+								</div>
+
 							</div>
-							
+
 						</div>
 					</div>
 				</div>
