@@ -110,10 +110,10 @@
  			-->
 			<div class="width90">
 				<div class="row border border-2 my-2 box-white">
-					<div class="col-9 col-md-9">
+					<div class="col-12 col-md-9">
 						<div class="row my-2 pt-2">
-							<div class="col-md-2">ㆍ회원등급</div>
-							<div class="col-md-10">
+							<div class="col-12 col-md-2">ㆍ회원등급</div>
+							<div class="col-12 col-md-10">
 								<div class="form-check-inline">
 									<input type="checkbox" class="form-check-input" id="memberRankAll" name="memberRank" onclick="selectAll2(this)">
 									<label for="memberRankAll" class="form-check-label">전체</label>
@@ -138,8 +138,8 @@
 							</div>
 						</div>
 						<div class="row my-2">
-							<div class="col-md-2">ㆍ수신동의</div>
-							<div class="col-md-10">
+							<div class="col-12 col-md-2">ㆍ수신동의</div>
+							<div class="col-12 col-md-10">
 								<div class="form-check-inline">
 									<input type="checkbox" class="form-check-input" id="consentSms" name=""> <label for="consentSms"
 										class="form-check-label">SMS</label>
@@ -151,30 +151,34 @@
 							</div>
 						</div>
 						<div class="row my-2 pb-2">
-							<div class="col-md-2">ㆍ검색어</div>
+							<div class="col-12 col-md-2">ㆍ검색어</div>
 							<div class="col-md-10">
 
 								<div class="row g-3">
-									<div class="col-md-2">
+									<div class="col-4 col-md-2">
 										<select class="form-select form-select-sm">
 											<option>이름</option>
 											<option>아이디</option>
 										</select>
 									</div>
-									<div class="col-md-5">
+									<div class="col-8 col-md-5">
 										<input class="form-control form-control-sm" placeholder="search..">
 									</div>
-									<div class="col-md">
+									<div class="col-9 col-md">
 										<input type="checkbox" class="form-check-input" id="memberOnline"> <label for="memberOnline"
 											class="form-check-label">현재 접속중인 회원만 검색</label>
 									</div>
-
+									<div class="col col-md d-md-none mt-3">
+										<button class="btn btn-info btn-sm">
+											<span class="text-white">검색</span>
+										</button>
+									</div>
 								</div>
 
 							</div>
 						</div>
 					</div>
-					<div class="col-3 col-md-3 text-end" style="margin: auto;">
+					<div class="col-md-3 text-end d-md-block d-none" style="margin: auto;">
 						<button class="btn btn-info btn-lg">
 							<span class="text-white">검색</span>
 						</button>
@@ -216,7 +220,7 @@
 				</div>
 
 				<div class="table-responsive">
-					<table class="table table-sm table-hover border border-2 box-white">
+					<table class="table table-lg table-hover border border-2 box-white">
 						<thead>
 							<tr>
 								<th><input type="checkbox" name="checkbox1" onclick="selectAll1(this)" class="form-check-input"></th>
