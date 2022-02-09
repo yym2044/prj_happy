@@ -23,3 +23,22 @@ th, td {
 	text-align: center;
 	
 }
+
+.borderX {
+	
+	border: none;
+
+}
+
+.borderB {
+	
+	border: none;
+	border-bottom: 1px solid black;
+	
+}
+
+.shadowX {
+	
+	box-shadow: none
+	
+}
