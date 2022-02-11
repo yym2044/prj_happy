@@ -72,14 +72,30 @@
 			</div>
 
 			<!-- offcanvas start -->
-			<div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+			<div class="offcanvas offcanvas-start bg-light" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
 				id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
 				<div class="offcanvas-header">
-					<h5 class="offcanvas-title" id="offcanvasScrollingLabel">Colored with scrolling</h5>
-					<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+					<h5 class="offcanvas-title" id="offcanvasScrollingLabel">Admin Menu</h5>
+					<!-- 닫기 버튼
+					<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button> 
+					-->
 				</div>
-				<div class="offcanvas-body">
-					<p>Try scrolling the rest of the page to see this option in action.</p>
+				<div class="offcanvas-body p-0">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-md-12 p-0">
+								<a href="#" role="button" class="btn btn-primary" style="width:100%;">
+									회원관리
+									<span>^</span>
+								</a>
+							</div>
+							<div class="col-md-12">s
+								<a href="#" role="button" class="btn btn-primary">
+									유저관리
+								</a>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 			<!-- offcanvas end -->
@@ -406,7 +422,7 @@
 							</tr>
 							<tr>
 								<td><input type="checkbox" class="form-check-input" id="ch9"></td>
-								<td><label for="ch9" class="form-check-label">사용자정의1</label></td>
+								<td><label for="ch9" class="form-check-label">등급</label></td>
 								<td><input type="checkbox" class="form-check-input" id="ch10"></td>
 								<td><label for="ch10" class="form-check-label">성별</label></td>
 							</tr>
