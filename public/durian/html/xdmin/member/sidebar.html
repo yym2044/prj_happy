@@ -17,13 +17,23 @@
 
 <!-- offcanvas start -->
 			
-			<div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
-				id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+			
+			<!-- button start -->
+			<button class="btn btn-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSideBar">
+				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list"
+						viewBox="0 0 16 16">
+		  		<path fill-rule="evenodd"
+							d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+				</svg>
+			</button>
+			<!-- button end -->
+			
+			
+			<!-- offcanvas start-->
+			<div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasSideBar" aria-labelledby="offcanvasScrollingLabel"> <!-- id를 button의 data-bs-toggle과 같게 맞춤 --> 
 				
 				<div class="offcanvas-header">
-					<img class="bi me-2" width="120" height="30"
-						src="../../../images/xdmin/coupang.png">
-					</img> 
+					<img class="bi me-2" width="120" height="30" src="../../../images/xdmin/coupang.png"></img> 
 					<h3 class="offcanvas-title" id="offcanvasScrollingLabel">Admin Menu</h3>
 					<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
 				</div>
@@ -37,8 +47,7 @@
 						
 						<ul class="list-unstyled ps-0">
 							<li class="mb-1">
-								<button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
-									data-bs-target="#home-collapse" aria-expanded="false">Home</button>
+								<button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false">Home</button>
 								<div class="collapse" id="home-collapse" style="">
 									<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
 										<li><a href="#" class="link-dark rounded">Overview</a></li>
@@ -48,8 +57,7 @@
 								</div>
 							</li>
 							<li class="mb-1">
-								<button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
-									data-bs-target="#dashboard-collapse" aria-expanded="false">Dashboard</button>
+								<button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">Dashboard</button>
 								<div class="collapse" id="dashboard-collapse" style="">
 									<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
 										<li><a href="#" class="link-dark rounded">Overview</a></li>
@@ -60,8 +68,7 @@
 								</div>
 							</li>
 							<li class="mb-1">
-								<button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
-									data-bs-target="#orders-collapse" aria-expanded="false">Orders</button>
+								<button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">Orders</button>
 								<div class="collapse" id="orders-collapse" style="">
 									<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
 										<li><a href="#" class="link-dark rounded">New</a></li>
@@ -73,8 +80,7 @@
 							</li>
 							<li class="border-top my-3"></li>
 							<li class="mb-1">
-								<button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
-									data-bs-target="#account-collapse" aria-expanded="false">Account</button>
+								<button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">Account</button>
 								<div class="collapse" id="account-collapse" style="">
 									<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
 										<li><a href="#" class="link-dark rounded">New...</a></li>
