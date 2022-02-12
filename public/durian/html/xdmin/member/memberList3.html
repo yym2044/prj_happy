@@ -8,7 +8,7 @@
 
 <link rel="stylesheet" href="../../../css/style.css">
 
-
+<link rel="stylesheet" href="../../../css/sidebars.css">
 
 </head>
 
@@ -82,55 +82,55 @@
 				</div>
 				<div class="offcanvas-body p-0">
 					<div>
-						<a class="btn btn-lg btn-secondary" data-bs-toggle="collapse" href="#memberManage" role="button" style="width:100%;"> 회원관리 
-						</a>
+						<a class="btn btn-lg btn-secondary" data-bs-toggle="collapse" href="#memberManage" role="button"
+							style="width: 100%;"> 회원관리 </a>
 					</div>
-						
-						<div class="collapse" id="memberManage">
-							<a class="btn btn-lg btn-light" role="button" aria-expanded="false"
-								aria-controls="collapseExample" style="width:100%;"> 유저관리 </a>
-						</div>	
-						
+
+					<div class="collapse show" id="memberManage">
+						<a class="btn btn-lg btn-light" role="button" aria-expanded="false" aria-controls="collapseExample"
+							style="width: 100%;"> 유저관리 </a>
+					</div>
+
 					<div>
-						<a class="btn btn-lg btn-secondary" data-bs-toggle="collapse" href="#systemManage" role="button" style="width:100%;"> 시스템관리 
-						</a>
+						<a class="btn btn-lg btn-secondary" data-bs-toggle="collapse" href="#systemManage" role="button"
+							style="width: 100%;"> 시스템관리 </a>
 					</div>
-						
-						<div class="collapse" id="systemManage">
-							<a class="btn btn-lg btn-light" role="button" aria-expanded="false"
-								aria-controls="collapseExample" style="width:100%;"> 코드그룹관리 </a>
-						</div>
-						<div class="collapse" id="systemManage">
-							<a class="btn btn-lg btn-light" role="button" aria-expanded="false"
-								aria-controls="collapseExample" style="width:100%;"> 코드관리 </a>
-						</div>
-						<div class="collapse" id="systemManage">
-							<a class="btn btn-lg btn-light" role="button" aria-expanded="false"
-								aria-controls="collapseExample" style="width:100%;"> 권한관리 </a>
-						</div>
-						<div class="collapse" id="systemManage">
-							<a class="btn btn-lg btn-light" role="button" aria-expanded="false"
-								aria-controls="collapseExample" style="width:100%;"> 메뉴관리 </a>
-						</div>
-					
+
+					<div class="collapse show" id="systemManage">
+						<a class="btn btn-lg btn-light" role="button" aria-expanded="false" aria-controls="collapseExample"
+							style="width: 100%;"> 코드그룹관리 </a>
+					</div>
+					<div class="collapse show" id="systemManage">
+						<a class="btn btn-lg btn-light" role="button" aria-expanded="false" aria-controls="collapseExample"
+							style="width: 100%;"> 코드관리 </a>
+					</div>
+					<div class="collapse show" id="systemManage">
+						<a class="btn btn-lg btn-light" role="button" aria-expanded="false" aria-controls="collapseExample"
+							style="width: 100%;"> 권한관리 </a>
+					</div>
+					<div class="collapse show" id="systemManage">
+						<a class="btn btn-lg btn-light" role="button" aria-expanded="false" aria-controls="collapseExample"
+							style="width: 100%;"> 메뉴관리 </a>
+					</div>
+
 					<div>
-						<a class="btn btn-lg btn-secondary" data-bs-toggle="collapse" href="#authManage" role="button" style="width:100%;"> 권한관리 
-						</a>
+						<a class="btn btn-lg btn-primary" data-bs-toggle="collapse" href="#authManage" role="button" style="width: 100%;">
+							권한관리 </a>
 					</div>
-					
-						<div class="collapse" id="authManage">
-							<a class="btn btn-lg btn-light" role="button" aria-expanded="false"
-								aria-controls="collapseExample" style="width:100%;"> 권한관리 </a>
-						</div>
-						<div class="collapse" id="authManage">
-							<a class="btn btn-lg btn-light" role="button" aria-expanded="false"
-								aria-controls="collapseExample" style="width:100%;"> 회원권한관리 </a>
-						</div>
-						<div class="collapse" id="authManage">
-							<a class="btn btn-lg btn-light" role="button" aria-expanded="false"
-								aria-controls="collapseExample" style="width:100%;"> 메뉴권한관리 </a>
-						</div>
-						
+
+					<div class="collapse show" id="authManage">
+						<a class="btn btn-lg btn-primary" role="button" aria-expanded="false" aria-controls="collapseExample"
+							style="width: 100%;"> 권한관리 </a>
+					</div>
+					<div class="collapse show" id="authManage">
+						<a class="btn btn-lg btn-primary" role="button" aria-expanded="false" aria-controls="collapseExample"
+							style="width: 100%;"> 회원권한관리 </a>
+					</div>
+					<div class="collapse show" id="authManage">
+						<a class="btn btn-lg btn-primary" role="button" aria-expanded="false" aria-controls="collapseExample"
+							style="width: 100%;"> 메뉴권한관리 </a>
+					</div>
+
 				</div>
 			</div>
 			<!-- offcanvas end -->
@@ -477,6 +477,132 @@
 		</div>
 	</form>
 
+	<div class="flex-shrink-0 p-3 bg-white" style="width: 280px;">
+		<a href="/" class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom"> <svg
+				class="bi me-2" width="30" height="24">
+				<use xlink:href="#bootstrap"></use></svg> <span class="fs-5 fw-semibold">Collapsible</span>
+		</a>
+		<ul class="list-unstyled ps-0">
+			<li class="mb-1">
+				<button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+					data-bs-target="#home-collapse" aria-expanded="false">Home</button>
+				<div class="collapse" id="home-collapse" style="">
+					<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+						<li><a href="#" class="link-dark rounded">Overview</a></li>
+						<li><a href="#" class="link-dark rounded">Updates</a></li>
+						<li><a href="#" class="link-dark rounded">Reports</a></li>
+					</ul>
+				</div>
+			</li>
+			<li class="mb-1">
+				<button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+					data-bs-target="#dashboard-collapse" aria-expanded="false">Dashboard</button>
+				<div class="collapse" id="dashboard-collapse" style="">
+					<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+						<li><a href="#" class="link-dark rounded">Overview</a></li>
+						<li><a href="#" class="link-dark rounded">Weekly</a></li>
+						<li><a href="#" class="link-dark rounded">Monthly</a></li>
+						<li><a href="#" class="link-dark rounded">Annually</a></li>
+					</ul>
+				</div>
+			</li>
+			<li class="mb-1">
+				<button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+					data-bs-target="#orders-collapse" aria-expanded="false">Orders</button>
+				<div class="collapse" id="orders-collapse" style="">
+					<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+						<li><a href="#" class="link-dark rounded">New</a></li>
+						<li><a href="#" class="link-dark rounded">Processed</a></li>
+						<li><a href="#" class="link-dark rounded">Shipped</a></li>
+						<li><a href="#" class="link-dark rounded">Returned</a></li>
+					</ul>
+				</div>
+			</li>
+			<li class="border-top my-3"></li>
+			<li class="mb-1">
+				<button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+					data-bs-target="#account-collapse" aria-expanded="false">Account</button>
+				<div class="collapse" id="account-collapse" style="">
+					<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+						<li><a href="#" class="link-dark rounded">New...</a></li>
+						<li><a href="#" class="link-dark rounded">Profile</a></li>
+						<li><a href="#" class="link-dark rounded">Settings</a></li>
+						<li><a href="#" class="link-dark rounded">Sign out</a></li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+	</div>
+
+	<div class="d-flex flex-column align-items-stretch flex-shrink-0 bg-white" style="width: 380px;">
+		<a href="/" class="d-flex align-items-center flex-shrink-0 p-3 link-dark text-decoration-none border-bottom"> <svg
+				class="bi me-2" width="30" height="24">
+				<use xlink:href="#bootstrap"></use></svg> <span class="fs-5 fw-semibold">List group</span>
+		</a>
+		<div class="list-group list-group-flush border-bottom scrollarea">
+			<a href="#" class="list-group-item list-group-item-action active py-3 lh-tight" aria-current="true">
+				<div class="d-flex w-100 align-items-center justify-content-between">
+					<strong class="mb-1">List group item heading</strong> <small>Wed</small>
+				</div>
+				<div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and date.</div>
+			</a> <a href="#" class="list-group-item list-group-item-action py-3 lh-tight">
+				<div class="d-flex w-100 align-items-center justify-content-between">
+					<strong class="mb-1">List group item heading</strong> <small class="text-muted">Tues</small>
+				</div>
+				<div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and date.</div>
+			</a> <a href="#" class="list-group-item list-group-item-action py-3 lh-tight">
+				<div class="d-flex w-100 align-items-center justify-content-between">
+					<strong class="mb-1">List group item heading</strong> <small class="text-muted">Mon</small>
+				</div>
+				<div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and date.</div>
+			</a> <a href="#" class="list-group-item list-group-item-action py-3 lh-tight" aria-current="true">
+				<div class="d-flex w-100 align-items-center justify-content-between">
+					<strong class="mb-1">List group item heading</strong> <small class="text-muted">Wed</small>
+				</div>
+				<div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and date.</div>
+			</a> <a href="#" class="list-group-item list-group-item-action py-3 lh-tight">
+				<div class="d-flex w-100 align-items-center justify-content-between">
+					<strong class="mb-1">List group item heading</strong> <small class="text-muted">Tues</small>
+				</div>
+				<div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and date.</div>
+			</a> <a href="#" class="list-group-item list-group-item-action py-3 lh-tight">
+				<div class="d-flex w-100 align-items-center justify-content-between">
+					<strong class="mb-1">List group item heading</strong> <small class="text-muted">Mon</small>
+				</div>
+				<div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and date.</div>
+			</a> <a href="#" class="list-group-item list-group-item-action py-3 lh-tight" aria-current="true">
+				<div class="d-flex w-100 align-items-center justify-content-between">
+					<strong class="mb-1">List group item heading</strong> <small class="text-muted">Wed</small>
+				</div>
+				<div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and date.</div>
+			</a> <a href="#" class="list-group-item list-group-item-action py-3 lh-tight">
+				<div class="d-flex w-100 align-items-center justify-content-between">
+					<strong class="mb-1">List group item heading</strong> <small class="text-muted">Tues</small>
+				</div>
+				<div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and date.</div>
+			</a> <a href="#" class="list-group-item list-group-item-action py-3 lh-tight">
+				<div class="d-flex w-100 align-items-center justify-content-between">
+					<strong class="mb-1">List group item heading</strong> <small class="text-muted">Mon</small>
+				</div>
+				<div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and date.</div>
+			</a> <a href="#" class="list-group-item list-group-item-action py-3 lh-tight" aria-current="true">
+				<div class="d-flex w-100 align-items-center justify-content-between">
+					<strong class="mb-1">List group item heading</strong> <small class="text-muted">Wed</small>
+				</div>
+				<div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and date.</div>
+			</a> <a href="#" class="list-group-item list-group-item-action py-3 lh-tight">
+				<div class="d-flex w-100 align-items-center justify-content-between">
+					<strong class="mb-1">List group item heading</strong> <small class="text-muted">Tues</small>
+				</div>
+				<div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and date.</div>
+			</a> <a href="#" class="list-group-item list-group-item-action py-3 lh-tight">
+				<div class="d-flex w-100 align-items-center justify-content-between">
+					<strong class="mb-1">List group item heading</strong> <small class="text-muted">Mon</small>
+				</div>
+				<div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and date.</div>
+			</a>
+		</div>
+	</div>
 
 	<script type="text/javascript">
 
@@ -500,6 +626,8 @@
 	</script>
 
 	<script src="../../../bootstrap/bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
+
+	<script src="../../../js/sidebars.js"></script>
 
 </body>
 
