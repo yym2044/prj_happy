@@ -35,7 +35,18 @@
 					<img src="../../../images/xdmin/lee.jpg" style="width: 40px; height: 50px;" class="rounded-circle border border-5">
 				</div>
 				<div class="col-4 col-md-1 mb-2 d-md-block d-none">
-					<div class="row">Yun (CEO)</div>
+					<div class="row dropdown">
+						<a href="#" class="link-dark text-decoration-none dropdown-toggle ps-0" data-bs-toggle="dropdown">
+							Yun (CEO)
+						</a>
+						<ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2">
+					        <li><a class="dropdown-item" href="#">New project...</a></li>
+					        <li><a class="dropdown-item" href="#">Settings</a></li>
+					        <li><a class="dropdown-item" href="#">Profile</a></li>
+					        <li><hr class="dropdown-divider"></li>
+					        <li><a class="dropdown-item" href="#">Sign out</a></li>
+					    </ul>
+					</div>
 					<div class="row">Administrator</div>
 				</div>
 
@@ -49,7 +60,7 @@
 				</div>
 				<div class="col col-md text-end d-md-block d-none">
 
-					<button class="btn btn-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling">
+					<button class="btn btn-outline-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling">
 						<i class="bi bi-list"></i>
 					</button>
 
@@ -93,8 +104,8 @@
 						
 						<ul class="list-unstyled ps-0">
 							<li class="mb-1">
-								<button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
-									data-bs-target="#home-collapse" aria-expanded="false">Home</button>
+								<a href="#" class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+									data-bs-target="#home-collapse" aria-expanded="false">Home</a>
 								<div class="collapse" id="home-collapse" style="">
 									<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
 										<li><a href="#" class="link-dark rounded">Overview</a></li>
@@ -104,8 +115,8 @@
 								</div>
 							</li>
 							<li class="mb-1">
-								<button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
-									data-bs-target="#dashboard-collapse" aria-expanded="false">Dashboard</button>
+								<a href="#" class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+									data-bs-target="#dashboard-collapse" aria-expanded="false">Dashboard</a>
 								<div class="collapse" id="dashboard-collapse" style="">
 									<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
 										<li><a href="#" class="link-dark rounded">Overview</a></li>
@@ -116,8 +127,8 @@
 								</div>
 							</li>
 							<li class="mb-1">
-								<button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
-									data-bs-target="#orders-collapse" aria-expanded="false">Orders</button>
+								<a href="#" class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+									data-bs-target="#orders-collapse" aria-expanded="false">Orders</a>
 								<div class="collapse" id="orders-collapse" style="">
 									<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
 										<li><a href="#" class="link-dark rounded">New</a></li>
@@ -129,8 +140,8 @@
 							</li>
 							<li class="border-top my-3"></li>
 							<li class="mb-1">
-								<button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
-									data-bs-target="#account-collapse" aria-expanded="false">Account</button>
+								<a href="#" class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+									data-bs-target="#account-collapse" aria-expanded="false">Account</a>
 								<div class="collapse" id="account-collapse" style="">
 									<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
 										<li><a href="#" class="link-dark rounded">New...</a></li>
@@ -276,7 +287,7 @@
 				<div class="row">
 					<div class="col-8 col-md-3 p-1 border border-2 box-white" style="margin-left: 12px;">검색결과 : 13 / 총 13명 검색결과</div>
 					<div class="col-1 col-md-1 ms-1 me-0 p-0">
-						<a class="btn btn-success" type="button" data-bs-toggle="modal" data-bs-target="#excelModal"> 
+						<a class="btn btn-outline-success" type="button" data-bs-toggle="modal" data-bs-target="#excelModal"> 
 							<i class="bi bi-file-earmark-excel"></i>
 						</a>
 					</div>
@@ -284,15 +295,15 @@
 						<div class="text-end">
 							<div class="btn-group btn-group-sm box-white" role="group">
 								<input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" disabled> <label
-									class="btn btn-outline-dark" for="btnradio1">view</label> <input type="radio" class="btn-check"
-									name="btnradio" id="btnradio2" autocomplete="off" checked> <label class="btn btn-outline-dark"
+									class="btn btn-outline-primary" for="btnradio1">view</label> <input type="radio" class="btn-check"
+									name="btnradio" id="btnradio2" autocomplete="off" checked> <label class="btn btn-outline-primary"
 									for="btnradio2">5</label> <input type="radio" class="btn-check" name="btnradio" id="btnradio3"
-									autocomplete="off"> <label class="btn btn-outline-dark" for="btnradio3">10</label> <input
+									autocomplete="off"> <label class="btn btn-outline-primary" for="btnradio3">10</label> <input
 									type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off"> <label
-									class="btn btn-outline-dark" for="btnradio4">20</label> <input type="radio" class="btn-check"
-									name="btnradio" id="btnradio5" autocomplete="off"> <label class="btn btn-outline-dark"
+									class="btn btn-outline-primary" for="btnradio4">20</label> <input type="radio" class="btn-check"
+									name="btnradio" id="btnradio5" autocomplete="off"> <label class="btn btn-outline-primary"
 									for="btnradio5">50</label> <input type="radio" class="btn-check" name="btnradio" id="btnradio6"
-									autocomplete="off"> <label class="btn btn-outline-dark" for="btnradio6">100</label>
+									autocomplete="off"> <label class="btn btn-outline-primary" for="btnradio6">100</label>
 							</div>
 						</div>
 					</div>
@@ -406,10 +417,10 @@
 
 				<div class="row ps-2">
 					<div class="col col-md-4 ms-1 p-0">
-						<a class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteModal"> 
+						<a class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#deleteModal"> 
 							<i class="bi bi-trash"></i>
 						</a> 
-						<a class="btn btn-primary" href="./memberForm.html"> 
+						<a class="btn btn-outline-primary" href="./memberForm.html"> 
 							<i class="bi bi-plus-square"></i>
 						</a>
 					</div>

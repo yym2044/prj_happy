@@ -46,9 +46,3 @@ th, td {
 	box-shadow: none
 	
 }
-
-input:focus{  /* 테두리 색깔 바뀌는거 */
-				border-color: red;
-			}
-
-			
