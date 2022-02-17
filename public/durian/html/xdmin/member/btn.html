@@ -1,0 +1,17 @@
+<body>
+    <button id="bt">요소 생성</button>
+    <div id="content">123</div>
+  </body>
+  
+  <script>
+    window.onload = function () {
+      var bt = document.getElementById("bt");
+      var content = document.getElementById("content");
+      bt.onclick = createNode;
+      function createNode() {
+        console.log("asdfa");
+        content.innerHTML =
+          "<a href='https://jenny-daru.tistory.com/' target='_blank' title='새창'>윤제니</a>";
+      }
+    };
+  </script>
