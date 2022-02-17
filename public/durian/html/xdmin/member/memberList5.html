@@ -544,21 +544,39 @@
 
 		<!-- deleteModal -->
 
-		<div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal fade" id="deleteModal">
 			<div class="modal-dialog">
 				<div class="modal-content">
 					<div class="modal-header">
-						<h5 class="modal-title" id="exampleModalLabel">확인창</h5>
-						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						<h5 class="modal-title">삭제</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
 					</div>
 					<div class="modal-body">선택항목을 삭제합니다.</div>
 					<div class="modal-footer">
-						<a class="btn btn-primary" href="./memberList.html" role="button">확인</a>
+						<a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#deleteConfirmModal">확인</a>
 						<button type="button" class="btn btn-danger" data-bs-dismiss="modal">취소</button>
 					</div>
 				</div>
 			</div>
 		</div>
+		
+		<!-- deleteConfirmModal -->
+		<div class="modal fade" id="deleteConfirmModal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">확인</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+					</div>
+					<div class="modal-body">정말 삭제합니다.</div>
+					<div class="modal-footer">
+						<a class="btn btn-primary" href="./memberList5.html" role="button">확인</a>
+						<button type="button" class="btn btn-danger" data-bs-dismiss="modal">취소</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
 
 		<div class="modal fade" id="excelModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
 			aria-labelledby="staticBackdropLabel" aria-hidden="true">

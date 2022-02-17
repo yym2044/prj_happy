@@ -36,6 +36,42 @@ a {
 			<p>Try scrolling the rest of the page to see this option in action.</p>
 		</div>
 	</div>
+	
+	
+	<button data-bs-target="#deleteModal" data-bs-toggle="modal">삭제</button>
+	<!-- deleteModal -->
+
+		<div class="modal fade" id="deleteModal" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">삭제</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">선택항목을 삭제합니다.</div>
+					<div class="modal-footer">
+						<button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#deleteConfirmModal">확인</button>
+						<button type="button" class="btn btn-danger" data-bs-dismiss="modal">취소</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- deleteConfirmModal -->
+		<div class="modal fade" id="deleteConfirmModal" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">확인</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">정말 삭제합니다.</div>
+					<div class="modal-footer">
+						<a class="btn btn-primary" href="./memberList5.html" role="button">확인</a>
+						<button type="button" class="btn btn-danger" data-bs-dismiss="modal">취소</button>
+					</div>
+				</div>
+			</div>
+		</div>
 
 
 
