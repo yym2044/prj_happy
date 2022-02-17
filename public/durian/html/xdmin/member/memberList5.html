@@ -383,7 +383,15 @@
 								<th>이름</th>
 								<th>등급</th>
 								<th>상태</th>
-								<th>접속수</th>
+								<th>
+								접속수
+								
+								<!-- 
+								<img class="pb-1" id="img" src="../../../images/xdmin/down.png" style="width:20px; height:20px;"></img>
+								<button onclick="toggleImg()">toggle</button> 
+								-->
+								
+								</th>
 								<th>가입일</th>
 								<th>관리</th>
 							</tr>
@@ -650,6 +658,11 @@
 			checkbox.checked = selectAll3.checked;
 		})
 	}
+	
+    function toggleImg() {
+      document.getElementById("img").src = "../../../images/xdmin/up.png";
+    }
+	
 	</script>
 
 	<script src="../../../bootstrap/bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
