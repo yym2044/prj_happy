@@ -118,7 +118,7 @@
 			<input type="text" class="form-control" id="inputMemo">
 		</div>
 		<div class="col col-md text-end">
-			<a class="btn btn-outline-dark" onclick="add_row()">등록</a>
+			<a class="btn btn-outline-dark" onclick="add_row()" onclick="increase()">등록</a>
 		</div>
 	
 	</div>
@@ -161,6 +161,8 @@
 	
 <script type="text/javascript">
 
+var count=1;
+
 function add_row() {
     var my_tbody = document.getElementById('my-tbody');
     // var row = my_tbody.insertRow(0); // 상단에 추가
@@ -170,11 +172,13 @@ function add_row() {
     var cell3 = row.insertCell(2);
     var cell4 = row.insertCell(3);
     var cell5 = row.insertCell(4);
-    cell1.innerHTML = 1;
+    cell1.innerHTML = count;
     cell2.innerHTML = new Date().toLocaleString();
     cell3.innerHTML = document.getElementById("inputMemo").value
     cell4.innerHTML = 'Master'
     cell5.innerHTML = "X"
+    
+    count += 1;
   }
   
 function delete_row() {
@@ -183,6 +187,9 @@ function delete_row() {
     // my_tbody.deleteRow(0); // 상단부터 삭제
     my_tbody.deleteRow( my_tbody.rows.length-1 ); // 하단부터 삭제
   }
+  
+
+  
 </script>
 
 </body>
