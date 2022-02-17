@@ -52,3 +52,7 @@ th, td {
 .container2 {
     box-shadow: 1px 1px 3px 1px #dadce0 inset;
 }
+
+.container3 {
+	box-shadow: 2px 2px 6px 2px #dadce0;
+}
