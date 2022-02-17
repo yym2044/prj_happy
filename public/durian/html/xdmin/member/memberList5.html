@@ -231,11 +231,15 @@
 							<div class="col-12 col-md-2">ㆍ수신동의</div>
 							<div class="col-12 col-md-10">
 								<div class="form-check-inline">
-									<input type="checkbox" class="form-check-input" id="consentSms" name=""> <label for="consentSms"
+									<input type="checkbox" class="form-check-input" id="consentAll" name="consent" onclick="selectAll3(this)">
+									<label for="consentAll" class="form-check-label">전체</label>
+								</div>
+								<div class="form-check-inline">
+									<input type="checkbox" class="form-check-input" id="consentSms" name="consent"> <label for="consentSms"
 										class="form-check-label">SMS</label>
 								</div>
 								<div class="form-check-inline">
-									<input type="checkbox" class="form-check-input" id="consentEmail" name=""> <label for="consentEmail"
+									<input type="checkbox" class="form-check-input" id="consentEmail" name="consent"> <label for="consentEmail"
 										class="form-check-label">이메일</label>
 								</div>
 							</div>
@@ -635,6 +639,15 @@
 		
 		checkboxes.forEach((checkbox) => {
 			checkbox.checked = selectAll2.checked;
+		})
+	}
+	
+	function selectAll3(selectAll3) {
+		const checkboxes
+			= document.getElementsByName("consent");
+		
+		checkboxes.forEach((checkbox) => {
+			checkbox.checked = selectAll3.checked;
 		})
 	}
 	</script>
