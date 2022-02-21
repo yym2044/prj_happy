@@ -191,12 +191,29 @@
 			<!-- 
 			<div class="fs-3">Code</div>
  			-->
+ 			
+ 			
+ 			
+ 			
+ 			
 			<!-- 웹 화면 -->
 			<div class="width90 d-none d-sm-block">
-				<div class="row border border-2 my-2 box-white" id="searchBox">
+			
+			<h4 class="d-flex"><i class="bi bi-grip-vertical text-danger"></i>회원리스트</h4>
+			
+			<nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+			  <ol class="breadcrumb">
+			    <li class="breadcrumb-item fs-6"><a href="#" style="text-decoration: none;">사이트운영</a></li>
+			    <li class="breadcrumb-item"><a href="#" style="text-decoration: none;">회원관리</a></li>
+			    <li class="breadcrumb-item active" aria-current="page"><b>회원리스트</b></li>
+			  </ol>
+			</nav>
+			
+			
+				<div class="row border border-1 my-2 box-white container1" id="searchBox">
 					<div class="col-12 col-md-9">
 						<div class="row my-2 pt-2">
-							<div class="col-12 col-md-2">ㆍ회원등급</div>
+							<div class="col-12 col-md-2 fw-bold">ㆍ회원등급</div>
 							<div class="col-12 col-md-10">
 								<div class="form-check-inline">
 									<input type="checkbox" class="form-check-input" id="memberRankAll" name="memberRank" onclick="selectAll2(this)">
@@ -222,7 +239,7 @@
 							</div>
 						</div>
 						<div class="row my-2">
-							<div class="col-12 col-md-2">ㆍ수신동의</div>
+							<div class="col-12 col-md-2 fw-bold">ㆍ수신동의</div>
 							<div class="col-12 col-md-10">
 								<div class="form-check-inline">
 									<input type="checkbox" class="form-check-input" id="consentAll" name="consent" onclick="selectAll3(this)">
@@ -239,7 +256,7 @@
 							</div>
 						</div>
 						<div class="row my-2 pb-2">
-							<div class="col-12 col-md-2">ㆍ검색어</div>
+							<div class="col-12 col-md-2 fw-bold">ㆍ검색어</div>
 							<div class="col-md-10">
 
 								<div class="row g-3">
@@ -331,7 +348,7 @@
 			<br> <br>
 			<div class="width92">
 				<div class="row">
-					<div class="col-8 col-md-3 p-1 border border-2 box-white" style="margin-left: 12px;">검색결과 : 13 / 총 13명 검색결과</div>
+					<div class="col-8 col-md-3 p-1 border border-2 box-white" style="margin-left: 12px;">검색결과 : <b>13</b> / 총 <b>13</b>명 검색결과</div>
 					<div class="col-1 col-md-1 ms-1 me-0 p-0">
 						<a class="btn btn-outline-success" type="button" data-bs-toggle="modal" data-bs-target="#excelModal"> <i
 							class="bi bi-file-earmark-excel"></i>
@@ -356,7 +373,7 @@
 				</div>
 
 				<div class="table-responsive">
-					<table class="table border border-2 box-white" style="min-width: 1000px; border-collapse: separate;">
+					<table class="table border border-1 box-white container1" style="min-width: 1000px; border-collapse: separate;">
 						<thead>
 							<tr>
 								<th><input type="checkbox" name="checkbox1" onclick="selectAll1(this)" class="form-check-input"></th>
