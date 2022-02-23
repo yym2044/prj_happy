@@ -1,4 +1,4 @@
-* {
+/* * {
 	box-sizing: border-box;
 }
 
@@ -83,25 +83,25 @@ pre {
 	color: #f8f8f2;
 	border-radius: 0 0 4px 4px;
 	margin-top: 20px;
-	white-space: pre-wrap; /* css-3 */
-	white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
-	white-space: -pre-wrap; /* Opera 4-6 */
-	white-space: -o-pre-wrap; /* Opera 7 */
-	word-wrap: break-word; /* Internet Explorer 5.5+ */
+	white-space: pre-wrap; css-3
+	white-space: -moz-pre-wrap; Mozilla, since 1999
+	white-space: -pre-wrap; Opera 4-6
+	white-space: -o-pre-wrap; Opera 7
+	word-wrap: break-word; Internet Explorer 5.5+
 }
 
 pre .bt {
 	color: #f8f8f2;
-} /* <> */
+} <>
 pre .anc {
 	color: #f92672;
-} /* anchor tag */
+} anchor tag
 pre .att {
 	color: #a6a926;
-} /* attribute */
+} attribute
 pre .val {
 	color: #e6db74;
-} /* value */
+} value
 .btn-container, .container {
 	background-color: white;
 	border-radius: 4px;
@@ -130,7 +130,7 @@ input[class*="btn"], button[class*="btn"] {
 	border: 0;
 }
 
-/* Here you can change the button sizes */
+Here you can change the button sizes
 .btn.large, .btn-two.large, .btn-effect.large {
 	padding: 20px 40px;
 	font-size: 22px;
@@ -159,7 +159,7 @@ input[class*="btn"], button[class*="btn"] {
 	font-size: 22px;
 }
 
-/* Colors for .btn and .btn-two */
+Colors for .btn and .btn-two
 .btn.blue, .btn-two.blue {
 	background-color: #7fb1bf;
 }
@@ -188,7 +188,7 @@ input[class*="btn"], button[class*="btn"] {
 	border-radius: 10px;
 }
 
-/* default button style */
+default button style
 .btn {
 	position: relative;
 	border: 0;
@@ -202,7 +202,7 @@ input[class*="btn"], button[class*="btn"] {
 	top: 4px;
 }
 
-/* color classes for .btn */
+color classes for .btn
 .btn.blue {
 	box-shadow: 0px 4px #74a3b0;
 }
@@ -257,7 +257,7 @@ input[class*="btn"], button[class*="btn"] {
 	background-color: #D6BB59;
 }
 
-/* Button two - I have no creativity for names */
+Button two - I have no creativity for names
 .btn-two {
 	color: white;
 	padding: 15px 25px;
@@ -278,7 +278,7 @@ input[class*="btn"], button[class*="btn"] {
 		inset;
 	position: relative;
 }
-/* 3D Button */
+3D Button
 .btn-3d {
 	position: relative;
 	display: inline-block;
@@ -320,7 +320,7 @@ input[class*="btn"], button[class*="btn"] {
 	top: 9px;
 }
 
-/* 3D button colors */
+3D button colors
 .btn-3d.red {
 	background-color: #e74c3c;
 	box-shadow: 0 0 0 1px #c63702 inset, 0 0 0 2px rgba(255, 255, 255, 0.15)
@@ -393,7 +393,7 @@ input[class*="btn"], button[class*="btn"] {
 		inset, 0 0 0 1px rgba(0, 0, 0, 0.4);
 }
 
-/* Gradient buttons */
+Gradient buttons
 .btn-gradient {
 	text-decoration: none;
 	color: white;
@@ -405,7 +405,7 @@ input[class*="btn"], button[class*="btn"] {
 	border-radius: 4px;
 	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
 }
-/* Gradient - ugly css is ugly */
+Gradient - ugly css is ugly
 .btn-gradient.cyan {
 	background: rgba(27, 188, 194, 1);
 	background: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(27, 188, 194, 1)),
@@ -548,4 +548,120 @@ input[class*="btn"], button[class*="btn"] {
 
 .btn-gradient.green:active {
 	background: #72B08E;
+} */
+
+.btn-3d {
+	position: relative;
+	display: inline-block;
+	/*
+	font-size: 22px;
+	padding: 20px 60px; */
+	color: white;
+	/* margin: 20px 10px 10px; */
+	border-radius: 6px;
+	text-align: center;
+	transition: top .01s linear;
+	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
 }
+
+.btn-3d.red:hover {
+	background-color: #e74c3c;
+}
+
+.btn-3d.blue:hover {
+	background-color: #699DD1;
+}
+
+.btn-3d.green:hover {
+	background-color: #80C49D;
+}
+
+.btn-3d.purple:hover {
+	background-color: #D19ECB;
+}
+
+.btn-3d.yellow:hover {
+	background-color: #F0D264;
+}
+
+.btn-3d.cyan:hover {
+	background-color: #82D1E3;
+}
+
+.btn-3d:active {
+	top: 9px;
+}
+
+.btn-3d.red {
+	background-color: #e74c3c;
+	box-shadow: 0 0 0 1px #c63702 inset, 0 0 0 2px rgba(255, 255, 255, 0.15)
+		inset, 0 8px 0 0 #C24032, 0 8px 0 1px rgba(0, 0, 0, 0.4), 0 8px 8px
+		1px rgba(0, 0, 0, 0.5);
+}
+
+.btn-3d.red:active {
+	box-shadow: 0 0 0 1px #c63702 inset, 0 0 0 2px rgba(255, 255, 255, 0.15)
+		inset, 0 0 0 1px rgba(0, 0, 0, 0.4);
+}
+
+.btn-3d.blue {
+	background-color: #6DA2D9;
+	box-shadow: 0 0 0 1px #6698cb inset, 0 0 0 2px rgba(255, 255, 255, 0.15)
+		inset, 0 8px 0 0 rgba(110, 164, 219, .7), 0 8px 0 1px
+		rgba(0, 0, 0, .4), 0 8px 8px 1px rgba(0, 0, 0, 0.5);
+}
+
+.btn-3d.blue:active {
+	box-shadow: 0 0 0 1px #6191C2 inset, 0 0 0 2px rgba(255, 255, 255, 0.15)
+		inset, 0 0 0 1px rgba(0, 0, 0, 0.4);
+}
+
+.btn-3d.green {
+	background-color: #82c8a0;
+	box-shadow: 0 0 0 1px #82c8a0 inset, 0 0 0 2px rgba(255, 255, 255, 0.15)
+		inset, 0 8px 0 0 rgba(126, 194, 155, .7), 0 8px 0 1px
+		rgba(0, 0, 0, .4), 0 8px 8px 1px rgba(0, 0, 0, 0.5);
+}
+
+.btn-3d.green:active {
+	box-shadow: 0 0 0 1px #82c8a0 inset, 0 0 0 2px rgba(255, 255, 255, 0.15)
+		inset, 0 0 0 1px rgba(0, 0, 0, 0.4);
+}
+
+
+.btn-3d.purple {
+	background-color: #cb99c5;
+	box-shadow: 0 0 0 1px #cb99c5 inset, 0 0 0 2px rgba(255, 255, 255, 0.15)
+		inset, 0 8px 0 0 rgba(189, 142, 183, .7), 0 8px 0 1px
+		rgba(0, 0, 0, .4), 0 8px 8px 1px rgba(0, 0, 0, 0.5);
+}
+
+.btn-3d.purple:active {
+	box-shadow: 0 0 0 1px #cb99c5 inset, 0 0 0 2px rgba(255, 255, 255, 0.15)
+		inset, 0 0 0 1px rgba(0, 0, 0, 0.4);
+}
+
+.btn-3d.cyan {
+	background-color: #7fccde;
+	box-shadow: 0 0 0 1px #7fccde inset, 0 0 0 2px rgba(255, 255, 255, 0.15)
+		inset, 0 8px 0 0 rgba(102, 164, 178, .6), 0 8px 0 1px
+		rgba(0, 0, 0, .4), 0 8px 8px 1px rgba(0, 0, 0, 0.5);
+}
+
+.btn-3d.cyan:active {
+	box-shadow: 0 0 0 1px #7fccde inset, 0 0 0 2px rgba(255, 255, 255, 0.15)
+		inset, 0 0 0 1px rgba(0, 0, 0, 0.4);
+}
+
+.btn-3d.yellow {
+	background-color: #F0D264;
+	box-shadow: 0 0 0 1px #F0D264 inset, 0 0 0 2px rgba(255, 255, 255, 0.15)
+		inset, 0 8px 0 0 rgba(196, 172, 83, .7), 0 8px 0 1px rgba(0, 0, 0, .4),
+		0 8px 8px 1px rgba(0, 0, 0, 0.5);
+}
+
+.btn-3d.yellow:active {
+	box-shadow: 0 0 0 1px #F0D264 inset, 0 0 0 2px rgba(255, 255, 255, 0.15)
+		inset, 0 0 0 1px rgba(0, 0, 0, 0.4);
+}
+

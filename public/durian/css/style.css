@@ -67,3 +67,11 @@ th, td {
 .container3 {
 	box-shadow: 2px 2px 6px 2px #dadce0;
 }
+
+.text-gray{
+	color: gray;
+}
+
+.nodeco{
+	text-decoration: none;
+}
