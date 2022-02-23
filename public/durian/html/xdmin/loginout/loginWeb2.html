@@ -48,55 +48,105 @@
 			</div>
 
 
-			<div class="row justify-content-center" style="width: 600px;">
+			<!-- 웹 -->
+			<div class="col-12 d-flex justify-content-center">
 
-				<div class="mt-4 col-8">
+				<div class="row justify-content-center" style="width: 600px;">
+
+					<div class="col-8 mt-4">
+
+						<div class="input-group input-group-lg mb-3">
+							<!-- <span class="input-group-text bg-light" id="userIcon"> <label for="Username"> <i
+									class="bi bi-person-circle text-secondary"></i>
+							</label>
+							</span> -->
+							<input type="text" class="form-control" id="Username" placeholder="아이디" aria-label="Username"
+								aria-describedby="userIcon">
+						</div>
+
+						<div class="input-group input-group-lg">
+							<!-- <span class="input-group-text bg-light" id="passwordIcon"> <label for="Password"> <i
+									class="bi bi-file-lock2-fill text-secondary"></i>
+							</label>
+							</span> -->
+							<input type="password" class="form-control" id="Password" placeholder="비밀번호" aria-label="Password"
+								aria-describedby="passwordIcon">
+						</div>
+
+					</div>
+					<div class="col-4 mt-4">
+						<button class="btn container3"
+							style="width: 100%; height: 100%; border-radius: 10px; background-color: lightslategray;">
+							<span class="fw-bold text-white">로그인</span>
+						</button>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="col-12 d-flex justify-content-center">
+				<div class="row d-flex justify-content-start mt-3" style="width: 600px;">
+					<div class="col-3 col-md-3 form-check ms-3">
+						<input type="checkbox" class="form-check-input" id="autoLogin" name="checkbox1" onclick="selectAll1(this)">
+						<label for="autoLogin" class="form-check-label"> <span class="fw-light"> 자동 로그인 </span>
+						</label>
+					</div>
+					<div class="col-3 col-md-3 form-check ms-3">
+						<input type="checkbox" class="form-check-input" id="saveId" name="checkbox1"> <label for="saveId"
+							class="form-check-label"><span class="fw-light">아이디 저장</span></label>
+					</div>
+				</div>
+			</div>
+
+			<!-- 모바일 -->
+			<!-- <div class="row justify-content-center">
+
+				<div class="col-12 mt-4">
 
 					<div class="input-group input-group-lg mb-3">
-						<!-- <span class="input-group-text bg-light" id="userIcon"> <label for="Username"> <i
+						<span class="input-group-text bg-light" id="userIcon"> <label for="Username"> <i
 								class="bi bi-person-circle text-secondary"></i>
 						</label>
-						</span> -->
+						</span>
 						<input type="text" class="form-control" id="Username" placeholder="아이디" aria-label="Username"
 							aria-describedby="userIcon">
 					</div>
 
 					<div class="input-group input-group-lg mb-3">
-						<!-- <span class="input-group-text bg-light" id="passwordIcon"> <label for="Password"> <i
+						<span class="input-group-text bg-light" id="passwordIcon"> <label for="Password"> <i
 								class="bi bi-file-lock2-fill text-secondary"></i>
 						</label>
-						</span> -->
+						</span>
 						<input type="password" class="form-control" id="Password" placeholder="비밀번호" aria-label="Password"
 							aria-describedby="passwordIcon">
 					</div>
 
-				</div>
-				<div class="mt-4 col-4 d-none d-md-block">
-					<button class="btn btn-dark container3" style="width: 100%; height: 112px; border-radius: 10px;">
-						<span class="fw-bold">로그인</span>
-					</button>
-				</div>
-
-
-				<div class="col-12">
 					<div class="row mb-3">
-						<div class="col-4 col-md-3 form-check ms-3">
-							<input type="checkbox" class="form-check-input" id="autoLogin" name="checkbox1" onclick="selectAll1(this)"> <label for="autoLogin"
-								class="form-check-label"> <span class="fw-bold"> 자동 로그인 </span>
+						<div class="col-6 col-md-4 form-check ms-3">
+							<input type="checkbox" class="form-check-input" id="autoLogin" name="checkbox1" onclick="selectAll1(this)">
+							<label for="autoLogin" class="form-check-label"> <span class="fw-light"> 자동 로그인 </span>
 							</label>
 						</div>
-						<div class="col-4 col-md-4 form-check">
+						<div class="col-6 col-md-4 form-check ms-3">
 							<input type="checkbox" class="form-check-input" id="saveId" name="checkbox1"> <label for="saveId"
-								class="form-check-label"><span class="fw-bold">아이디 저장</span></label>
+								class="form-check-label"><span class="fw-light">아이디 저장</span></label>
 						</div>
 					</div>
+
+
 				</div>
+				
+				
+
+			</div> -->
 
 
-			</div>
 
 
 		</div>
+
+
+
 
 		<!-- other login -->
 
