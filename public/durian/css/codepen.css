@@ -604,6 +604,18 @@ Gradient - ugly css is ugly
 		inset, 0 0 0 1px rgba(0, 0, 0, 0.4);
 }
 
+.btn-3d.white {
+	background-color: #ffffff;
+	box-shadow: 0 0 0 1px #ffffff inset, 0 0 0 2px rgba(255, 255, 255, 0.15)
+		inset, 0 8px 0 0 #c0c0c0, 0 8px 0 1px rgba(0, 0, 0, 0.4), 0 8px 8px
+		1px rgba(0, 0, 0, 0.5);
+}
+
+.btn-3d.white:active {
+	box-shadow: 0 0 0 1px #ffffff inset, 0 0 0 2px rgba(255, 255, 255, 0.15)
+		inset, 0 0 0 1px rgba(0, 0, 0, 0.4);
+}
+
 .btn-3d.blue {
 	background-color: #6DA2D9;
 	box-shadow: 0 0 0 1px #6698cb inset, 0 0 0 2px rgba(255, 255, 255, 0.15)

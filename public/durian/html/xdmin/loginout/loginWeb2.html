@@ -47,11 +47,11 @@
 		</div>
 
 		<!-- 웹 -->
-		<div class="row my-5 justify-content-center d-none d-md-block">
+		<div class="row my-5 justify-content-center d-none d-md-block border py-5 bg-light">
 
 			<div class="col-12 text-center">
 				<h1 style="color: lightslategray">
-					웹 MEMBER <span class="fw-bold">LOGIN</span>
+					MEMBER <span class="fw-bold">LOGIN</span>
 				</h1>
 			</div>
 
@@ -61,37 +61,37 @@
 
 				<div class="row justify-content-center" style="width: 600px;">
 
-					<div class="col-8 mt-4">
-
-						<div class="input-group input-group-lg mb-3">
-							<!-- <span class="input-group-text bg-light" id="userIcon"> <label for="Username"> <i
-									class="bi bi-person-circle text-secondary"></i>
-							</label>
-							</span> -->
-							<input type="text" class="form-control" id="Username" placeholder="아이디" aria-label="Username"
-								aria-describedby="userIcon">
+						<div class="col-8 mt-4">
+	
+							<div class="input-group input-group-lg mb-3">
+								<!-- <span class="input-group-text bg-light" id="userIcon"> <label for="Username"> <i
+										class="bi bi-person-circle text-secondary"></i>
+								</label>
+								</span> -->
+								<input type="text" class="form-control" id="Username" placeholder="아이디" aria-label="Username"
+									aria-describedby="userIcon">
+							</div>
+	
+							<div class="input-group input-group-lg">
+								<!-- <span class="input-group-text bg-light" id="passwordIcon"> <label for="Password"> <i
+										class="bi bi-file-lock2-fill text-secondary"></i>
+								</label>
+								</span> -->
+								<input type="password" class="form-control" id="Password" placeholder="비밀번호" aria-label="Password"
+									aria-describedby="passwordIcon">
+							</div>
+	
 						</div>
-
-						<div class="input-group input-group-lg">
-							<!-- <span class="input-group-text bg-light" id="passwordIcon"> <label for="Password"> <i
-									class="bi bi-file-lock2-fill text-secondary"></i>
-							</label>
-							</span> -->
-							<input type="password" class="form-control" id="Password" placeholder="비밀번호" aria-label="Password"
-								aria-describedby="passwordIcon">
+						<div class="col-4 mt-4">
+							<button class="btn container3 btn-3d blue" style="width: 100%; height: 100%; border-radius: 10px;">
+								<span class="fw-bold text-white">로그인</span>
+							</button>
 						</div>
-
-					</div>
-					<div class="col-4 mt-4">
-						<button class="btn container3 btn-3d blue" style="width: 100%; height: 100%; border-radius: 10px;">
-							<span class="fw-bold text-white">로그인</span>
-						</button>
-					</div>
-
+					
 				</div>
 			</div>
 
-			<div class="col-12 d-flex justify-content-center">
+			<div class="col-12 d-flex justify-content-center mb-4">
 				<div class="row d-flex justify-content-start mt-3" style="width: 600px;">
 					<div class="col-3 col-md-3 form-check ms-3">
 						<input type="checkbox" class="form-check-input" id="autoLogin" name="checkbox1" onclick="selectAll1(this)">
@@ -104,6 +104,36 @@
 					</div>
 				</div>
 			</div>
+			
+			
+			
+			
+			
+			<div class="col-md-12 text-center my-4 fw-bold"><span class="p-2 container1">다른 계정으로 로그인</span></div>
+
+			<div class="col-md-12">
+				<div class="row justify-content-center">
+					<div class="col-md-1 text-center">
+						<img src="../../../images/xdmin/sns_icon/icon_round_facebook_48.png" style="border-radius: 50%;" class="btn-3d blue">
+					</div>
+					<div class="col-md-1 text-center">
+						<img src="../../../images/xdmin/sns_icon/icon_round_naver_48.png" style="border-radius: 50%;" class="btn-3d green">
+					</div>
+					<div class="col-md-1 text-center">
+						<img src="../../../images/xdmin/sns_icon/icon_round_kakaotalk_48.png" style="border-radius: 50%;" class="btn-3d yellow">
+					</div>
+					<div class="col-md-1 text-center">
+						<img src="../../../images/xdmin/sns_icon/icon_round_google_48.png" style="border-radius: 50%;" class="btn-3d white">
+					</div>
+				</div>
+			</div>
+			
+			
+			
+			
+			
+			
+			
 		</div>
 
 		<!-- 모바일 -->
@@ -111,7 +141,7 @@
 
 			<div class="col-12 text-center">
 				<h1 style="color: lightslategray">
-					모바일 MEMBER <span class="fw-bold">LOGIN</span>
+					MEMBER <span class="fw-bold">LOGIN</span>
 				</h1>
 			</div>
 
@@ -176,6 +206,7 @@
 		<!-- social login -->
 
 		<!-- 웹 -->
+		<!-- 
 		<div class="row d-flex justify-content-center g-3 d-none d-md-block mb-4">
 			<div class="col-md-12 text-center">다른 계정으로 로그인</div>
 
@@ -196,11 +227,11 @@
 				</div>
 			</div>
 		</div>
-
+		 -->
 		<!-- 모바일 -->
 		<div class="d-flex justify-content-center d-md-none">
 			<div class="row mb-5" style="min-width: 350px;">
-				<button type="button" class="btn btn-primary  mb-1">
+				<button type="button" class="btn btn-primary btn-3d blue mb-1 text-white">
 					<div class="row">
 						<div class="col-1 col-md-1 text-start">
 							<img src="../../../images/xdmin/sns_icon/icon_round_facebook_48.png">
@@ -208,7 +239,7 @@
 						<div class="col col-md fw-bold" style="margin: auto;">페이스북 계정으로 로그인</div>
 					</div>
 				</button>
-				<button type="button" class="btn btn-warning mb-1">
+				<button type="button" class="btn btn-warning btn-3d yellow mb-1 text-white">
 					<div class="row">
 						<div class="col-1 col-md-1 text-start">
 							<img src="../../../images/xdmin/sns_icon/icon_round_kakaotalk_48.png">
@@ -216,7 +247,7 @@
 						<div class="col col-md fw-bold" style="margin: auto;">카카오 계정으로 로그인</div>
 					</div>
 				</button>
-				<button type="button" class="btn btn-success mb-1">
+				<button type="button" class="btn btn-success btn-3d green mb-1 text-white">
 					<div class="row">
 						<div class="col-1 col-md-1 text-start">
 							<img src="../../../images/xdmin/sns_icon/icon_round_naver_48.png">
@@ -224,7 +255,7 @@
 						<div class="col col-md fw-bold" style="margin: auto;">네이버 계정으로 로그인</div>
 					</div>
 				</button>
-				<button type="button" class="btn btn-default mb-1 border box-white">
+				<button type="button" class="btn btn-default mb-1 border box-white btn-3d cyan text-white">
 					<div class="row">
 						<div class="col-1 col-md-1 text-start">
 							<img src="../../../images/xdmin/sns_icon/icon_round_google_48.png">
@@ -276,6 +307,26 @@
 
 </div>
 
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 <script src="../../../bootstrap/bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
 
