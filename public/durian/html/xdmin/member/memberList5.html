@@ -17,7 +17,7 @@
 	<form>
 		<div class="container-fluid bg-light">
 
-			<div class="row box-white mt-3">
+			<div class="row box-white pt-3 collapse show" id="firstRow">
 				<div class="col-6 col-md-2">
 					<img src="../../../images/xdmin/coupang.png" class="img-fluid">
 				</div>
@@ -35,7 +35,7 @@
 				<div class="col-2 col-md-1 mb-2 p-0 text-end pe-2 d-md-block d-none">
 					<img src="../../../images/xdmin/lee.jpg" style="width: 40px; height: 50px;" class="rounded-circle border border-5">
 				</div>
-				<div class="col-4 col-md-1 mb-2 d-md-block d-none">
+				<div class="col-4 col-md mb-2 d-md-block d-none">
 					<div class="row dropdown">
 						<a href="#" class="link-dark text-decoration-none dropdown-toggle ps-0" data-bs-toggle="dropdown"> Yun (CEO) </a>
 						<ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2">
@@ -57,19 +57,9 @@
 						<option>日本語</option>
 					</select>
 				</div>
-				<div class="col col-md text-end d-md-block d-none">
-					<button class="btn btn-outline-secondary" type="button" data-bs-toggle="offcanvas"
-						data-bs-target="#offcanvasScrolling">
-						<i class="bi bi-list"></i>
-					</button>
-					<!-- 
-					<button class="btn btn-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNavbar">
-						<i class="bi bi-list"></i>
-					</button>
-				 -->
-				</div>
+
 			</div>
-			<div class="row box-white py-1">
+			<div class="row box-white">
 				<div class="col-10 col-md-10 fs-4 mb-2 d-md-none">Coupang Management System</div>
 				<div class="col col-md text-end d-md-none">
 
@@ -160,7 +150,7 @@
 			<!-- offcanvas end -->
 
 
-			<div class="row collapse show" id="collapseNavbar">
+			<div class="row">
 				<ul class="nav bg-secondary">
 					<li class="nav-item"><a class="nav-link link-light" href="#">Home</a></li>
 					<li class="nav-item"><a class="nav-link link-light" href="#">Features</a></li>
@@ -171,8 +161,32 @@
 							<li><a class="dropdown-item" href="#">Action</a></li>
 							<li><a class="dropdown-item" href="#">Another Action</a></li>
 							<li><a class="dropdown-item" href="#">Something else here</a></li>
-						</ul></li>
+						</ul>
+					</li>
+					<li>
+						<div class="col col-md d-md-block d-none">
+							<button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling">
+								<i class="bi bi-list"></i>
+							</button>
+						</div>
+					</li>
 				</ul>
+			</div>
+
+			<div class="row">
+				<div class="col-md-2">
+					<div class="row"><div class="col-md-12 fw-bold fs-4 text-center">관리자화면</div></div>
+					<div class="row"><div class="col-md-12 text-center">Administrator</div></div>
+				</div>
+				<div class="col-md-2">
+					<button class="btn btn-lg btn-light">환경설정</button>
+				</div>
+				<div class="col-md-2">
+					<button class="btn btn-lg btn-light">회원관리</button>
+				</div>
+				<div class="col-md-2">
+					<button class="btn btn-lg btn-light">게시판관리</button>
+				</div>
 			</div>
 
 			<!-- 
