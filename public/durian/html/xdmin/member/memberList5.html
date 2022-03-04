@@ -14,6 +14,7 @@
 </head>
 
 <body>
+
 	<form>
 		<div class="container-fluid bg-light">
 
@@ -150,9 +151,10 @@
 			<!-- offcanvas end -->
 
 
-			<div class="row">
-				<ul class="nav bg-secondary">
-					<li class="nav-item"><a class="nav-link link-light" href="#">Home</a></li>
+			<!-- 
+			<div class="row bg-secondary">
+				<ul class="col nav">
+					<li class="nav-item"><a class="nav-link link-light">관리자화면</a></li>
 					<li class="nav-item"><a class="nav-link link-light" href="#">Features</a></li>
 					<li class="nav-item"><a class="nav-link link-light" href="#">시스템 관리</a></li>
 					<li class="nav-item dropdown"><a class="nav-link link-light dropdown-toggle" href="#"
@@ -162,29 +164,28 @@
 							<li><a class="dropdown-item" href="#">Another Action</a></li>
 							<li><a class="dropdown-item" href="#">Something else here</a></li>
 						</ul></li>
-					<li>
-						<div class="col col-md d-md-block d-none">
-							<button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling">
-								<i class="bi bi-list"></i>
-							</button>
-						</div>
-					</li>
 				</ul>
+				<div class="col-1 d-flex justify-content-end">
+					<button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling">
+						<i class="bi bi-list"></i>
+					</button>
+				</div>
 			</div>
-
+			 -->
+			 
 			<!-- NavBar 수정할 거 -->
-			
-			<div class="row d-flex align-items-center">
+
+			<div class="row d-flex align-items-center bg-secondary">
 				<div class="col-md-2">
 					<div class="row">
-						<div class="col-md-12 fw-bold fs-4 text-center">관리자화면</div>
+						<div class="col-md-12 fw-bold fs-4 text-center text-light">관리자화면</div>
 					</div>
 					<div class="row">
-						<div class="col-md-12 text-center">Administrator</div>
+						<div class="col-md-12 text-center text-white">Administrator</div>
 					</div>
 				</div>
-				<div class="col-md-1" style="width:140px;">
-					<button class="btn btn-lg box-white">
+				<div class="col-md-1 p-2" style="width: 140px;">
+					<button class="btn btn-lg bg-light">
 						<div class="row">
 							<i class="bi bi-gear"></i>
 						</div>
@@ -193,8 +194,8 @@
 						</div>
 					</button>
 				</div>
-				<div class="col-md-1" style="width:140px;">
-					<button class="btn btn-lg box-white">
+				<div class="col-md-1" style="width: 140px;">
+					<button class="btn btn-lg bg-light">
 						<div class="row">
 							<i class="bi bi-people-fill"></i>
 						</div>
@@ -203,14 +204,19 @@
 						</div>
 					</button>
 				</div>
-				<div class="col-md-1" style="width:140px;">
-					<button class="btn btn-lg box-white">
+				<div class="col-md" style="width: 140px;">
+					<button class="btn btn-lg bg-light">
 						<div class="row">
 							<i class="bi bi-card-list"></i>
 						</div>
 						<div class="row">
 							<span class="fs-6">게시판관리</span>
 						</div>
+					</button>
+				</div>
+				<div class="col-md-1 d-flex justify-content-end">
+					<button class="btn btn-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling">
+						<i class="bi bi-list"></i>
 					</button>
 				</div>
 			</div>
