@@ -17,14 +17,13 @@
 
 
 	<form>
-		<div class="container-fluid">
+		<div class="container-fluid bg-light">
 
-			<br>
-			<div class="row">
+			<div class="row box-white pt-3 collapse show" id="firstRow">
 				<div class="col-6 col-md-2">
 					<img src="../../../images/xdmin/coupang.png" class="img-fluid">
 				</div>
-				<div class="col-6 col-md-5 fs-4 mb-2">Coupang Management System</div>
+				<div class="col-6 col-md-5 fs-4 mb-2 d-md-block d-none">Coupang Management System</div>
 
 				<!-- 
 				<div class="col-12 col-md-2 fs-6 mb-2">
@@ -35,51 +34,191 @@
 				</div>
 				 -->
 
-				<div class="col-2 col-md-1 mb-2 p-0 text-end pe-2">
+				<div class="col-2 col-md-1 mb-2 p-0 text-end pe-2 d-md-block d-none">
 					<img src="../../../images/xdmin/lee.jpg" style="width: 40px; height: 50px;" class="rounded-circle border border-5">
 				</div>
-				<div class="col-4 col-md-1 mb-2">
-					<div class="row">Yun (CEO)</div>
+				<div class="col-4 col-md mb-2 d-md-block d-none">
+					<div class="row dropdown">
+						<a href="#" class="link-dark text-decoration-none dropdown-toggle ps-0" data-bs-toggle="dropdown"> Yun (CEO) </a>
+						<ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2">
+							<li><a class="dropdown-item" href="#">New project...</a></li>
+							<li><a class="dropdown-item" href="#">Settings</a></li>
+							<li><a class="dropdown-item" href="#">Profile</a></li>
+							<li><hr class="dropdown-divider"></li>
+							<li><a class="dropdown-item" href="#">Sign out</a></li>
+						</ul>
+					</div>
 					<div class="row">Administrator</div>
 				</div>
 
-				<div class="col-3 col-md-1 mb-2">
-					<select class="form-select">
+				<div class="col-3 col-md-1 mb-2 d-md-block d-none">
+					<select class="form-select bg-light">
 						<option>언어</option>
 						<option>한국어</option>
 						<option>Eng</option>
 						<option>日本語</option>
 					</select>
 				</div>
-				<div class="col-3 col-md-2 text-end">
 
-					<button class="btn btn-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNavbar">
-						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list"
-							viewBox="0 0 16 16">
-			  		<path fill-rule="evenodd"
-								d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
-					</svg>
+			</div>
+			<div class="row box-white collapse show" id="firstRow">
+				<div class="col-10 col-md-10 fs-4 mb-2 d-md-none">Coupang Management System</div>
+				<div class="col col-md text-end d-md-none"></div>
+			</div>
+
+			<!-- offcanvas start -->
+
+			<div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+				id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+
+				<div class="offcanvas-header">
+					<img class="bi me-2" width="120" height="30" src="../../../images/xdmin/coupang.png">
+					<h3 class="offcanvas-title" id="offcanvasScrollingLabel">Admin Menu</h3>
+					<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+				</div>
+
+				<div class="offcanvas-body p-0">
+					<div class="flex-shrink-0 p-3 bg-white" style="width: 280px;">
+						<a href="#" class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom"> <span
+							class="fs-5 fw-semibold">Collapsible</span>
+						</a>
+
+
+						<ul class="list-unstyled ps-0">
+							<li class="mb-1"><a href="#" class="btn btn-toggle align-items-center rounded collapsed"
+								data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false">Home</a>
+								<div class="collapse" id="home-collapse">
+									<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+										<li><a href="#" class="link-dark rounded">Overview</a></li>
+										<li><a href="#" class="link-dark rounded">Updates</a></li>
+										<li><a href="#" class="link-dark rounded">Reports</a></li>
+									</ul>
+								</div></li>
+							<li class="mb-1"><a href="#" class="btn btn-toggle align-items-center rounded collapsed"
+								data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">Dashboard</a>
+								<div class="collapse" id="dashboard-collapse" style="">
+									<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+										<li><a href="#" class="link-dark rounded">Overview</a></li>
+										<li><a href="#" class="link-dark rounded">Weekly</a></li>
+										<li><a href="#" class="link-dark rounded">Monthly</a></li>
+										<li><a href="#" class="link-dark rounded">Annually</a></li>
+									</ul>
+								</div></li>
+							<li class="mb-1"><a href="#" class="btn btn-toggle align-items-center rounded collapsed"
+								data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">Orders</a>
+								<div class="collapse" id="orders-collapse" style="">
+									<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+										<li><a href="#" class="link-dark rounded">New</a></li>
+										<li><a href="#" class="link-dark rounded">Processed</a></li>
+										<li><a href="#" class="link-dark rounded">Shipped</a></li>
+										<li><a href="#" class="link-dark rounded">Returned</a></li>
+									</ul>
+								</div></li>
+							<li class="border-top my-3"></li>
+							<li class="mb-1"><a href="#" class="btn btn-toggle align-items-center rounded collapsed"
+								data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">Account</a>
+								<div class="collapse" id="account-collapse" style="">
+									<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+										<li><a href="#" class="link-dark rounded">New...</a></li>
+										<li><a href="#" class="link-dark rounded">Profile</a></li>
+										<li><a href="#" class="link-dark rounded">Settings</a></li>
+										<li><a href="#" class="link-dark rounded">Sign out</a></li>
+									</ul>
+								</div></li>
+						</ul>
+					</div>
+				</div>
+				<div class="offcanvas-footer">
+					<div class="dropdown border-top ms-3 py-3">
+						<a href="#" class="d-flex align-items-center link-dark text-decoration-none dropdown-toggle" id="dropdownUser2"
+							data-bs-toggle="dropdown" aria-expanded="false"> <img src="../../../images/xdmin/lee.jpg" alt="" width="40"
+							height="50" class="rounded-circle border border-5 me-2"> <strong>Yun</strong>
+						</a>
+						<ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2">
+							<li><a class="dropdown-item" href="#">New project...</a></li>
+							<li><a class="dropdown-item" href="#">Settings</a></li>
+							<li><a class="dropdown-item" href="#">Profile</a></li>
+							<li><hr class="dropdown-divider"></li>
+							<li><a class="dropdown-item" href="#">Sign out</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- offcanvas end -->
+
+
+
+			<div class="row bg-secondary">
+				<div class="col">
+					<ul class="nav">
+						<li class="nav-item"><a class="nav-link link-light">관리자화면</a></li>
+						<li class="nav-item"><a class="nav-link link-light" href="#">Features</a></li>
+						<li class="nav-item"><a class="nav-link link-light" href="#">시스템 관리</a></li>
+						<li class="nav-item dropdown"><a class="nav-link link-light dropdown-toggle" href="#"
+							data-bs-toggle="dropdown">Dropdown</a>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="#">Action</a></li>
+								<li><a class="dropdown-item" href="#">Another Action</a></li>
+								<li><a class="dropdown-item" href="#">Something else here</a></li>
+							</ul></li>
+					</ul>
+				</div>
+				<div class="col d-flex justify-content-end">
+					<button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling">
+						<i class="bi bi-list"></i>
 					</button>
-
-
 				</div>
 			</div>
 
-			<div class="row collapse show pt-2" id="collapseNavbar">
-				<ul class="nav bg-secondary">
-					<li class="nav-item"><a class="nav-link link-light" href="#">Home</a></li>
-					<li class="nav-item"><a class="nav-link link-light" href="#">Features</a></li>
-					<li class="nav-item"><a class="nav-link link-light" href="#">시스템 관리</a></li>
-					<li class="nav-item dropdown"><a class="nav-link link-light dropdown-toggle" href="#" data-bs-toggle="dropdown">Dropdown</a>
-						<ul class="dropdown-menu">
-							<li><a class="dropdown-item" href="#">Action</a></li>
-							<li><a class="dropdown-item" href="#">Another Action</a></li>
-							<li><a class="dropdown-item" href="#">Something else here</a></li>
-						</ul>
-					</li>
-				</ul>
-			</div>
 
+			<!-- NavBar 수정할 거 -->
+			<!-- 
+			<div class="row d-flex align-items-center bg-secondary">
+				<div class="col-md-2">
+					<div class="row">
+						<div class="col-md-12 fw-bold fs-4 text-center text-light" data-bs-toggle="collapse" data-bs-target="#firstRow">관리자화면</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12 text-center text-white">Administrator</div>
+					</div>
+				</div>
+				<div class="col-md-1 p-2" style="width: 140px;">
+					<button class="btn btn-lg bg-light">
+						<div class="row">
+							<i class="bi bi-gear"></i>
+						</div>
+						<div class="row">
+							<span class="fs-6">환경설정</span>
+						</div>
+					</button>
+				</div>
+				<div class="col-md-1" style="width: 140px;">
+					<button class="btn btn-lg bg-light">
+						<div class="row">
+							<i class="bi bi-people-fill"></i>
+						</div>
+						<div class="row">
+							<span class="fs-6">회원관리</span>
+						</div>
+					</button>
+				</div>
+				<div class="col-md" style="width: 140px;">
+					<button class="btn btn-lg bg-light">
+						<div class="row">
+							<i class="bi bi-card-list"></i>
+						</div>
+						<div class="row">
+							<span class="fs-6">게시판관리</span>
+						</div>
+					</button>
+				</div>
+				<div class="col-md-1 d-flex justify-content-end">
+					<button class="btn btn-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling">
+						<i class="bi bi-list"></i>
+					</button>
+				</div>
+			</div>
+ 			-->
 			<!-- 
 			<div class="row">
 				<ul class="nav bg-secondary">
@@ -90,10 +229,9 @@
 				</ul>
 			</div>
 			 -->
-
 		</div>
 		
-		<div class="container-fluid bg-light pt-3">
+		<div class="container-fluid bg-light py-3">
 
 			<div class="width90">
 
