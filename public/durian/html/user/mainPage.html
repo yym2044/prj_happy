@@ -24,8 +24,7 @@
 							<li><a class="dropdown-item" href="#">여행·티켓</a></li>
 							<li><a class="dropdown-item" href="#">로켓배송</a></li>
 							<li><a class="dropdown-item" href="#">제휴마케팅</a></li>
-						</ul>
-					</li>
+						</ul></li>
 				</ul>
 			</div>
 			<div class="col d-flex justify-content-end">
@@ -41,7 +40,10 @@
 		<div class="row">
 
 			<div class="col d-flex justify-content-end">
-				<button><!--  class="btn btn-lg btn-primary" --><i class="bi bi-list fs-2"></i><br>카테고리</button>
+				<button>
+					<!--  class="btn btn-lg btn-primary" -->
+					<i class="bi bi-list fs-2"></i><br>카테고리
+				</button>
 			</div>
 
 			<div class="col-10">
@@ -61,12 +63,18 @@
 								</select>
 							</div>
 							<input class="form-control" type="text" placeholder="찾고 싶은 상품을 검색해보세요!">
-							<button class="btn btn-outline-secondary" type="button"><i class="bi bi-search"></i></button>
+							<button class="btn btn-outline-secondary" type="button">
+								<i class="bi bi-search"></i>
+							</button>
 						</div>
 					</div>
 					<div class="col-2">
-						<button><i class="bi bi-person"></i><br>마이쿠팡</button>
-						<button><i class="bi bi-cart4"></i><br>장바구니</button>
+						<button>
+							<i class="bi bi-person"></i><br>마이쿠팡
+						</button>
+						<button>
+							<i class="bi bi-cart4"></i><br>장바구니
+						</button>
 					</div>
 
 				</div>
@@ -91,13 +99,13 @@
 		<!-- 광고 carousel s -->
 		<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
 			<div class="carousel-inner">
-				<div class="carousel-item active" data-bs-interval="100">
+				<div class="carousel-item active" data-bs-interval="5000">
 					<img src="../../images/user/mainPage/ad1.jpg" class="d-block w-120" alt="...">
 				</div>
-				<div class="carousel-item" data-bs-interval="2000">
+				<div class="carousel-item" data-bs-interval="5000">
 					<img src="../../images/user/mainPage/ad2.jpg" class="d-block w-120" alt="...">
 				</div>
-				<div class="carousel-item">
+				<div class="carousel-item" data-bs-interval="5000">
 					<img src="../../images/user/mainPage/ad3.jpg" class="d-block w-120" alt="...">
 				</div>
 			</div>
@@ -110,64 +118,204 @@
 		</div>
 		<!-- 광고 carousel e -->
 
-		<div class="row row-cols-1 row-cols-md-5 my-3 text-center">
-			<div class="col">
-				<div class="card mb-4 rounded-3 shadow-sm">
-					<div class="card-header py-3">
-						<h4 class="my-0 fw-normal">Free</h4>
+		<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+			<div class="carousel-indicators">
+				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+					aria-current="true" aria-label="Slide 1"></button>
+				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+			</div>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<div class="row row-cols-1 row-cols-md-5 my-3 justify-content-center text-center">
+						<div class="col">
+							<div class="card mb-4 rounded-3 shadow-sm">
+								<div class="card-header py-3">
+									<h4 class="my-0 fw-normal">Free</h4>
+								</div>
+								<div class="card-body">
+									<h1 class="card-title pricing-card-title">
+										$0<small class="text-muted fw-light">/mo</small>
+									</h1>
+									<ul class="list-unstyled mt-3 mb-4">
+										<li>10 users included</li>
+										<li>2 GB of storage</li>
+										<li>Email support</li>
+										<li>Help center access</li>
+									</ul>
+									<button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for free</button>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card mb-4 rounded-3 shadow-sm">
+								<div class="card-header py-3">
+									<h4 class="my-0 fw-normal">Pro</h4>
+								</div>
+								<div class="card-body">
+									<h1 class="card-title pricing-card-title">
+										$15<small class="text-muted fw-light">/mo</small>
+									</h1>
+									<ul class="list-unstyled mt-3 mb-4">
+										<li>20 users included</li>
+										<li>10 GB of storage</li>
+										<li>Priority email support</li>
+										<li>Help center access</li>
+									</ul>
+									<button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card mb-4 rounded-3 shadow-sm border-primary">
+								<div class="card-header py-3 text-white bg-primary border-primary">
+									<h4 class="my-0 fw-normal">Enterprise</h4>
+								</div>
+								<div class="card-body">
+									<h1 class="card-title pricing-card-title">
+										$29<small class="text-muted fw-light">/mo</small>
+									</h1>
+									<ul class="list-unstyled mt-3 mb-4">
+										<li>30 users included</li>
+										<li>15 GB of storage</li>
+										<li>Phone and email support</li>
+										<li>Help center access</li>
+									</ul>
+									<button type="button" class="w-100 btn btn-lg btn-primary">Contact us</button>
+								</div>
+							</div>
+						</div>
 					</div>
-					<div class="card-body">
-						<h1 class="card-title pricing-card-title">
-							$0<small class="text-muted fw-light">/mo</small>
-						</h1>
-						<ul class="list-unstyled mt-3 mb-4">
-							<li>10 users included</li>
-							<li>2 GB of storage</li>
-							<li>Email support</li>
-							<li>Help center access</li>
-						</ul>
-						<button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for free</button>
+				</div>
+				<div class="carousel-item">
+					<div class="row row-cols-1 row-cols-md-5 my-3 justify-content-center text-center">
+						<div class="col">
+							<div class="card mb-4 rounded-3 shadow-sm">
+								<div class="card-header py-3">
+									<h4 class="my-0 fw-normal">Free</h4>
+								</div>
+								<div class="card-body">
+									<h1 class="card-title pricing-card-title">
+										$0<small class="text-muted fw-light">/mo</small>
+									</h1>
+									<ul class="list-unstyled mt-3 mb-4">
+										<li>10 users included</li>
+										<li>2 GB of storage</li>
+										<li>Email support</li>
+										<li>Help center access</li>
+									</ul>
+									<button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for free</button>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card mb-4 rounded-3 shadow-sm">
+								<div class="card-header py-3">
+									<h4 class="my-0 fw-normal">Pro</h4>
+								</div>
+								<div class="card-body">
+									<h1 class="card-title pricing-card-title">
+										$15<small class="text-muted fw-light">/mo</small>
+									</h1>
+									<ul class="list-unstyled mt-3 mb-4">
+										<li>20 users included</li>
+										<li>10 GB of storage</li>
+										<li>Priority email support</li>
+										<li>Help center access</li>
+									</ul>
+									<button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card mb-4 rounded-3 shadow-sm border-primary">
+								<div class="card-header py-3 text-white bg-primary border-primary">
+									<h4 class="my-0 fw-normal">Enterprise</h4>
+								</div>
+								<div class="card-body">
+									<h1 class="card-title pricing-card-title">
+										$29<small class="text-muted fw-light">/mo</small>
+									</h1>
+									<ul class="list-unstyled mt-3 mb-4">
+										<li>30 users included</li>
+										<li>15 GB of storage</li>
+										<li>Phone and email support</li>
+										<li>Help center access</li>
+									</ul>
+									<button type="button" class="w-100 btn btn-lg btn-primary">Contact us</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<div class="row row-cols-1 row-cols-md-5 my-3 justify-content-center text-center">
+						<div class="col">
+							<div class="card mb-4 rounded-3 shadow-sm">
+								<div class="card-header py-3">
+									<h4 class="my-0 fw-normal">Free</h4>
+								</div>
+								<div class="card-body">
+									<h1 class="card-title pricing-card-title">
+										$0<small class="text-muted fw-light">/mo</small>
+									</h1>
+									<ul class="list-unstyled mt-3 mb-4">
+										<li>10 users included</li>
+										<li>2 GB of storage</li>
+										<li>Email support</li>
+										<li>Help center access</li>
+									</ul>
+									<button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for free</button>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card mb-4 rounded-3 shadow-sm">
+								<div class="card-header py-3">
+									<h4 class="my-0 fw-normal">Pro</h4>
+								</div>
+								<div class="card-body">
+									<h1 class="card-title pricing-card-title">
+										$15<small class="text-muted fw-light">/mo</small>
+									</h1>
+									<ul class="list-unstyled mt-3 mb-4">
+										<li>20 users included</li>
+										<li>10 GB of storage</li>
+										<li>Priority email support</li>
+										<li>Help center access</li>
+									</ul>
+									<button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card mb-4 rounded-3 shadow-sm border-primary">
+								<div class="card-header py-3 text-white bg-primary border-primary">
+									<h4 class="my-0 fw-normal">Enterprise</h4>
+								</div>
+								<div class="card-body">
+									<h1 class="card-title pricing-card-title">
+										$29<small class="text-muted fw-light">/mo</small>
+									</h1>
+									<ul class="list-unstyled mt-3 mb-4">
+										<li>30 users included</li>
+										<li>15 GB of storage</li>
+										<li>Phone and email support</li>
+										<li>Help center access</li>
+									</ul>
+									<button type="button" class="w-100 btn btn-lg btn-primary">Contact us</button>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
-			<div class="col">
-				<div class="card mb-4 rounded-3 shadow-sm">
-					<div class="card-header py-3">
-						<h4 class="my-0 fw-normal">Pro</h4>
-					</div>
-					<div class="card-body">
-						<h1 class="card-title pricing-card-title">
-							$15<small class="text-muted fw-light">/mo</small>
-						</h1>
-						<ul class="list-unstyled mt-3 mb-4">
-							<li>20 users included</li>
-							<li>10 GB of storage</li>
-							<li>Priority email support</li>
-							<li>Help center access</li>
-						</ul>
-						<button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
-					</div>
-				</div>
-			</div>
-			<div class="col">
-				<div class="card mb-4 rounded-3 shadow-sm border-primary">
-					<div class="card-header py-3 text-white bg-primary border-primary">
-						<h4 class="my-0 fw-normal">Enterprise</h4>
-					</div>
-					<div class="card-body">
-						<h1 class="card-title pricing-card-title">
-							$29<small class="text-muted fw-light">/mo</small>
-						</h1>
-						<ul class="list-unstyled mt-3 mb-4">
-							<li>30 users included</li>
-							<li>15 GB of storage</li>
-							<li>Phone and email support</li>
-							<li>Help center access</li>
-						</ul>
-						<button type="button" class="w-100 btn btn-lg btn-primary">Contact us</button>
-					</div>
-				</div>
-			</div>
+			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="visually-hidden">Next</span>
+			</button>
 		</div>
 
 	</div>
