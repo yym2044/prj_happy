@@ -204,19 +204,27 @@ label {
 							var regExp = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[!@#$%^&*]).{8,20}$/;
 
 							if (regExp.test(pwd1)) {
+								$("#ifmmPwd").addClass("is-valid");
+								$("#ifmmPwd").removeClass("is-invalid");
 								$("#ifmmPwdValidFeedBack").show();
 								$("#ifmmPwdInvalidFeedBack").hide();
 							} else if (!regExp.test(pwd1) && pwd1.length > 1) {
+								$("#ifmmPwd").addClass("is-invalid");
+								$("#ifmmPwd").removeClass("is-valid");
 								$("#ifmmPwdValidFeedBack").hide();
 								$("#ifmmPwdInvalidFeedBack").show();
 							}
 
 							if (pwd1 != "" && pwd2 != "") {
 								if (pwd1 == pwd2) {
+									$("#ifmmPwdConfirm").addClass("is-valid");
+									$("#ifmmPwdConfirm").removeClass("is-invalid");
 									$("#ifmmPwdConfirmValidFeedBack").show();
 									$("#ifmmPwdConfirmInvalidFeedBack").hide();
 									$("#submit").removeAttr("disabled");
 								} else {
+									$("#ifmmPwdConfirm").addClass("is-invalid");
+									$("#ifmmPwdConfirm").removeClass("is-valid");
 									$("#ifmmPwdConfirmValidFeedBack").hide();
 									$("#ifmmPwdConfirmInvalidFeedBack").show();
 									$("#submit").attr("disabled", "disabled");
