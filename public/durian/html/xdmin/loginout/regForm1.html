@@ -88,14 +88,14 @@ textarea {
 						<div class="col-12 mt-4 border container1 box-white p-4">
 							<div class="row px-2">
 								<div class="form-check">
-									<input id="selectConsentAll" name="consent" onclick="selectAll(this)" type="checkbox" class="form-check-input rounded-circle">
+									<input id="selectConsentAll" name="" onclick="selectAll(this)" type="checkbox" class="form-check-input rounded-circle">
 									<label class="form-check-label" for="selectConsentAll">쿠팡 이용약관, 개인정보 수집 및 이용, 위치정보 이용약관(선택), 프로모션 정보 수신(선택)에 모두 동의합니다.</label>
 								</div>
 							</div>
 
 							<div class="row px-2">
 								<div class="form-check col">
-									<input id="consentRequired1" name="chk" type="checkbox" class="form-check-input rounded-circle">
+									<input id="consentRequired1" name="chk" type="checkbox" class="form-check-input rounded-circle require">
 									<label class="form-check-label" for="consentRequired1">쿠팡 이용약관 동의<span class="text-danger">(필수)</span></label>
 								</div>
 								<div class="col-1">></div>
@@ -103,21 +103,21 @@ textarea {
 
 							<div class="row px-2">
 								<div class="form-check col">
-									<input id="consentRequired2" name="chk" type="checkbox" class="form-check-input rounded-circle">
+									<input id="consentRequired2" name="chk" type="checkbox" class="form-check-input rounded-circle require">
 									<label class="form-check-label" for="consentRequired2">전자금융거래 이용약관 동의<span class="text-danger">(필수)</span></label>
 								</div>
 								<div class="col-1">></div>
 							</div>
 							<div class="row px-2">
 								<div class="form-check col">
-									<input id="consentRequired3" name="chk" type="checkbox" class="form-check-input rounded-circle">
+									<input id="consentRequired3" name="chk" type="checkbox" class="form-check-input rounded-circle require">
 									<label class="form-check-label" for="consentRequired3">개인정보 수집 및 이용 동의<span class="text-danger">(필수)</span></label>
 								</div>
 								<div class="col-1">></div>
 							</div>
 							<div class="row px-2">
 								<div class="form-check col">
-									<input id="consentRequired4" name="chk" type="checkbox" class="form-check-input rounded-circle">
+									<input id="consentRequired4" name="chk" type="checkbox" class="form-check-input rounded-circle require">
 									<label class="form-check-label" for="consentRequired4">개인정보 제3자 제공 동의<span class="text-danger">(필수)</span></label>
 								</div>
 								<div class="col-1">></div>
@@ -153,6 +153,13 @@ textarea {
 
 
 						</div>
+						<div class="row p-0">
+							<div class="col d-flex justify-content-center p-0">
+								<button class="btn btn-lg btn-secondary" style="width: 50%;">취소</button>
+								<a href="./regForm2.html" id="btnCon" class="btn btn-lg btn-danger" style="width: 50%;">확인</a>
+							</div>
+						</div>
+
 
 					</div>
 				</div>
@@ -188,18 +195,8 @@ textarea {
 
 <script src="../../../bootstrap/bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
 
-<script type="text/javascript">
-	function selectAll(selectAll) {
-		const checkboxes 
-			= document.getElementsByName("checkbox");
-		
-		checkboxes.forEach((checkbox) => {
-			checkbox.checked = selectAll.checked;
-		})
-	}
-</script>
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="../../../js/validation.js"></script>
 
 <script type="text/javascript">
 $(document).ready(function() {
@@ -242,6 +239,30 @@ $(document).ready(function() {
 		}
 	});
 	
+	$("#btnCon").click(function(){
+		
+		if(!$("#consentRequired1").is(":checked")){
+			alert("필수항목을 체크해주십시오");
+			$("#consentRequired1").focus();
+			return false;
+		}
+		if(!$("#consentRequired2").is(":checked")){
+			alert("필수항목을 체크해주십시오");
+			$("#consentRequired2").focus();
+			return false;
+		}
+		if(!$("#consentRequired3").is(":checked")){
+			alert("필수항목을 체크해주십시오");
+			$("#consentRequired3").focus();
+			return false;
+		}
+		if(!$("#consentRequired4").is(":checked")){
+			alert("필수항목을 체크해주십시오");
+			$("#consentRequired4").focus();
+			return false;
+		}
+		
+	});
 	
 });
 
