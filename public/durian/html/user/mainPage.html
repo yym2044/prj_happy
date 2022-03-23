@@ -9,6 +9,11 @@
 <link rel="stylesheet" href="../../css/style.css">
 
 <style type="text/css">
+
+ul.nav li.dropdown:hover > ul.dropdown-menu {
+	display:block; margin:0; 
+}
+
 footer div div a {
 	text-decoration: none;
 	color: black;
@@ -49,12 +54,29 @@ footer div div a {
 		<div class="row my-2">
 
 			<div class="col d-flex justify-content-end">
+				<!-- 
 				<button>
-					<!--  class="btn btn-lg btn-primary" -->
 					<i class="bi bi-list fs-2"></i>
 					<br>
 					카테고리
 				</button>
+				 -->
+				<ul class="nav">
+					<li class="nav-item dropdown"><a class="nav-link link-light dropdown-toggle p-0" href="#" data-bs-toggle="dropdown">
+							<button class="btn btn-primary btn-lg p-0" style="width: 100%;">
+								<i class="bi bi-list fs-2 p-0"></i>
+								<br>
+								카테고리
+							</button>
+						</a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="#">패션의류/잡화</a></li>
+							<li><a class="dropdown-item" href="#">뷰티</a></li>
+							<li><a class="dropdown-item" href="#">식품</a></li>
+						</ul>
+					</li>
+				</ul>
+
 			</div>
 
 			<div class="col-10">
@@ -110,6 +132,7 @@ footer div div a {
 			</div>
 
 		</div>
+
 
 		<!-- 광고 carousel s -->
 		<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
