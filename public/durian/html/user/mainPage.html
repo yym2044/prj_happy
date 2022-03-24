@@ -24,11 +24,21 @@ footer div div a {
 	font-size: small;
 	padding: 8px;
 }
+
 .nav-item {
 	font-size: small;
 }
-.randomProduct, .todayHot  {
+
+.randomProduct, .todayHot {
 	width: 100%;
+}
+
+.productLink {
+	text-decoration: none;
+}
+
+.productLink:hover {
+	text-decoration: underline;
 }
 </style>
 
@@ -65,9 +75,9 @@ footer div div a {
 
 			<div class="col-1 offset-2 justify-content-end">
 				<ul class="nav">
-					<li class="nav-item dropdown">
-						<a class="nav-link link-light dropdown-toggle p-0" href="#"> <!-- data-bs-toggle="dropdown" -->
-							<button class="btn btn-primary btn-lg" style="width: 110px; height:115px;">
+					<li class="nav-item dropdown"><a class="nav-link link-light dropdown-toggle p-0" href="#">
+							<!-- data-bs-toggle="dropdown" -->
+							<button class="btn btn-primary btn-lg" style="width: 110px; height: 115px;">
 								<i class="bi bi-list fs-2"></i>
 								<div style="font-size: small;">카테고리</div>
 							</button>
@@ -222,110 +232,51 @@ footer div div a {
 				<div class="carousel-item active">
 					<div class="card-group width65">
 						<div class="card">
-							<a>
+							<a class="productLink link-dark">
 								<img class="randomProduct" src="../../images/user/mainPage/product/randomProduct1.jpg">
+								<span class="fs-5 d-block pt-2 px-1">상품이름</span>
 							</a>
-							<div class="card-body">
-								<h5 class="card-title">상품이름</h5>
-								<p class="card-text fw-bold">상품가격</p>
-							</div>
-							<div class="card-footer box-white">
-								<small class="text-muted">Last updated 3 mins ago</small>
-							</div>
-
-						</div>
-						<div class="card">
-							<img class="randomProduct" src="../../images/user/mainPage/product/randomProduct2.jpg">
-							<div class="card-body">
-								<h5 class="card-title">상품이름</h5>
-								<p class="card-text fw-bold">상품가격</p>
-							</div>
+							<p class="card-text fw-bold pt-2 px-1 mb-5">상품가격</p>
 							<div class="card-footer box-white">
 								<small class="text-muted">Last updated 3 mins ago</small>
 							</div>
 						</div>
 						<div class="card">
-							<img class="randomProduct" src="../../images/user/mainPage/product/randomProduct3.jpg">
-							<div class="card-body">
-								<h5 class="card-title">상품이름</h5>
-								<p class="card-text fw-bold">상품가격</p>
-							</div>
+							<a class="productLink link-dark">
+								<img class="randomProduct" src="../../images/user/mainPage/product/randomProduct2.jpg">
+								<span class="fs-5 d-block pt-2 px-1">상품이름</span>
+							</a>
+							<p class="card-text fw-bold pt-2 px-1 mb-5">상품가격</p>
 							<div class="card-footer box-white">
 								<small class="text-muted">Last updated 3 mins ago</small>
 							</div>
 						</div>
 						<div class="card">
-							<a href="./productView.html">
+							<a class="productLink link-dark">
+								<img class="randomProduct" src="../../images/user/mainPage/product/randomProduct3.jpg">
+								<span class="fs-5 d-block pt-2 px-1">상품이름</span>
+							</a>
+							<p class="card-text fw-bold pt-2 px-1 mb-5">상품가격</p>
+							<div class="card-footer box-white">
+								<small class="text-muted">Last updated 3 mins ago</small>
+							</div>
+						</div>
+						<div class="card">
+							<a class="productLink link-dark" href="./productView.html">
 								<img class="randomProduct" src="../../images/user/mainPage/product/randomProduct4.jpg">
+								<span class="fs-5 d-block pt-2 px-1">상품이름</span>
 							</a>
-							<div class="card-body">
-								<h5 class="card-title">상품이름</h5>
-								<p class="card-text fw-bold">상품가격</p>
-							</div>
+							<p class="card-text fw-bold pt-2 px-1 mb-5">상품가격</p>
 							<div class="card-footer box-white">
 								<small class="text-muted">Last updated 3 mins ago</small>
 							</div>
 						</div>
 						<div class="card">
-							<img class="randomProduct" src="../../images/user/mainPage/product/randomProduct5.jpg">
-							<div class="card-body">
-								<h5 class="card-title">상품이름</h5>
-								<p class="card-text fw-bold">상품가격</p>
-							</div>
-							<div class="card-footer box-white">
-								<small class="text-muted">Last updated 3 mins ago</small>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="carousel-item">
-					<div class="card-group width65">
-						<div class="card">
-							<img class="randomProduct" src="../../images/user/mainPage/product/randomProduct6.jpg">
-							<div class="card-body">
-								<h5 class="card-title">상품이름</h5>
-								<p class="card-text fw-bold">상품가격</p>
-							</div>
-							<div class="card-footer box-white">
-								<small class="text-muted">Last updated 3 mins ago</small>
-							</div>
-						</div>
-						<div class="card">
-							<img class="randomProduct" src="../../images/user/mainPage/product/randomProduct7.jpg">
-							<div class="card-body">
-								<h5 class="card-title">상품이름</h5>
-								<p class="card-text fw-bold">상품가격</p>
-							</div>
-							<div class="card-footer box-white">
-								<small class="text-muted">Last updated 3 mins ago</small>
-							</div>
-						</div>
-						<div class="card">
-							<img class="randomProduct" src="../../images/user/mainPage/product/randomProduct8.jpg">
-							<div class="card-body">
-								<h5 class="card-title">상품이름</h5>
-								<p class="card-text fw-bold">상품가격</p>
-							</div>
-							<div class="card-footer box-white">
-								<small class="text-muted">Last updated 3 mins ago</small>
-							</div>
-						</div>
-						<div class="card">
-							<img class="randomProduct" src="../../images/user/mainPage/product/randomProduct9.jpg">
-							<div class="card-body">
-								<h5 class="card-title">상품이름</h5>
-								<p class="card-text fw-bold">상품가격</p>
-							</div>
-							<div class="card-footer box-white">
-								<small class="text-muted">Last updated 3 mins ago</small>
-							</div>
-						</div>
-						<div class="card">
-							<img class="randomProduct" src="../../images/user/mainPage/product/randomProduct10.jpg">
-							<div class="card-body">
-								<h5 class="card-title">상품이름</h5>
-								<p class="card-text fw-bold">상품가격</p>
-							</div>
+							<a class="productLink link-dark">
+								<img class="randomProduct" src="../../images/user/mainPage/product/randomProduct5.jpg">
+								<span class="fs-5 d-block pt-2 px-1">상품이름</span>
+							</a>
+							<p class="card-text fw-bold pt-2 px-1 mb-5">상품가격</p>
 							<div class="card-footer box-white">
 								<small class="text-muted">Last updated 3 mins ago</small>
 							</div>
@@ -335,51 +286,105 @@ footer div div a {
 				<div class="carousel-item">
 					<div class="card-group width65">
 						<div class="card">
-							<img class="randomProduct" src="../../images/user/mainPage/product/randomProduct11.jpg">
-							<div class="card-body">
-								<h5 class="card-title">상품이름</h5>
-								<p class="card-text fw-bold">상품가격</p>
-							</div>
+							<a class="productLink link-dark">
+								<img class="randomProduct" src="../../images/user/mainPage/product/randomProduct6.jpg">
+								<span class="fs-5 d-block pt-2 px-1">상품이름</span>
+							</a>
+							<p class="card-text fw-bold pt-2 px-1 mb-5">상품가격</p>
 							<div class="card-footer box-white">
 								<small class="text-muted">Last updated 3 mins ago</small>
 							</div>
 						</div>
 						<div class="card">
-							<img class="randomProduct" src="../../images/user/mainPage/product/randomProduct12.jpg">
-							<div class="card-body">
-								<h5 class="card-title">상품이름</h5>
-								<p class="card-text fw-bold">상품가격</p>
-							</div>
+							<a class="productLink link-dark">
+								<img class="randomProduct" src="../../images/user/mainPage/product/randomProduct7.jpg">
+								<span class="fs-5 d-block pt-2 px-1">상품이름</span>
+							</a>
+							<p class="card-text fw-bold pt-2 px-1 mb-5">상품가격</p>
 							<div class="card-footer box-white">
 								<small class="text-muted">Last updated 3 mins ago</small>
 							</div>
 						</div>
 						<div class="card">
-							<img class="randomProduct" src="../../images/user/mainPage/product/randomProduct13.jpg">
-							<div class="card-body">
-								<h5 class="card-title">상품이름</h5>
-								<p class="card-text fw-bold">상품가격</p>
-							</div>
+							<a class="productLink link-dark">
+								<img class="randomProduct" src="../../images/user/mainPage/product/randomProduct8.jpg">
+								<span class="fs-5 d-block pt-2 px-1">상품이름</span>
+							</a>
+							<p class="card-text fw-bold pt-2 px-1 mb-5">상품가격</p>
 							<div class="card-footer box-white">
 								<small class="text-muted">Last updated 3 mins ago</small>
 							</div>
 						</div>
 						<div class="card">
-							<img class="randomProduct" src="../../images/user/mainPage/product/randomProduct14.jpg">
-							<div class="card-body">
-								<h5 class="card-title">상품이름</h5>
-								<p class="card-text fw-bold">상품가격</p>
-							</div>
+							<a class="productLink link-dark">
+								<img class="randomProduct" src="../../images/user/mainPage/product/randomProduct9.jpg">
+								<span class="fs-5 d-block pt-2 px-1">상품이름</span>
+							</a>
+							<p class="card-text fw-bold pt-2 px-1 mb-5">상품가격</p>
 							<div class="card-footer box-white">
 								<small class="text-muted">Last updated 3 mins ago</small>
 							</div>
 						</div>
 						<div class="card">
-							<img class="randomProduct" src="../../images/user/mainPage/product/randomProduct15.jpg">
-							<div class="card-body">
-								<h5 class="card-title">상품이름</h5>
-								<p class="card-text fw-bold">상품가격</p>
+							<a class="productLink link-dark">
+								<img class="randomProduct" src="../../images/user/mainPage/product/randomProduct10.jpg">
+								<span class="fs-5 d-block pt-2 px-1">상품이름</span>
+							</a>
+							<p class="card-text fw-bold pt-2 px-1 mb-5">상품가격</p>
+							<div class="card-footer box-white">
+								<small class="text-muted">Last updated 3 mins ago</small>
 							</div>
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<div class="card-group width65">
+						<div class="card">
+							<a class="productLink link-dark">
+								<img class="randomProduct" src="../../images/user/mainPage/product/randomProduct11.jpg">
+								<span class="fs-5 d-block pt-2 px-1">상품이름</span>
+							</a>
+							<p class="card-text fw-bold pt-2 px-1 mb-5">상품가격</p>
+							<div class="card-footer box-white">
+								<small class="text-muted">Last updated 3 mins ago</small>
+							</div>
+						</div>
+						<div class="card">
+							<a class="productLink link-dark">
+								<img class="randomProduct" src="../../images/user/mainPage/product/randomProduct12.jpg">
+								<span class="fs-5 d-block pt-2 px-1">상품이름</span>
+							</a>
+							<p class="card-text fw-bold pt-2 px-1 mb-5">상품가격</p>
+							<div class="card-footer box-white">
+								<small class="text-muted">Last updated 3 mins ago</small>
+							</div>
+						</div>
+						<div class="card">
+							<a class="productLink link-dark">
+								<img class="randomProduct" src="../../images/user/mainPage/product/randomProduct13.jpg">
+								<span class="fs-5 d-block pt-2 px-1">상품이름</span>
+							</a>
+							<p class="card-text fw-bold pt-2 px-1 mb-5">상품가격</p>
+							<div class="card-footer box-white">
+								<small class="text-muted">Last updated 3 mins ago</small>
+							</div>
+						</div>
+						<div class="card">
+							<a class="productLink link-dark">
+								<img class="randomProduct" src="../../images/user/mainPage/product/randomProduct14.jpg">
+								<span class="fs-5 d-block pt-2 px-1">상품이름</span>
+							</a>
+							<p class="card-text fw-bold pt-2 px-1 mb-5">상품가격</p>
+							<div class="card-footer box-white">
+								<small class="text-muted">Last updated 3 mins ago</small>
+							</div>
+						</div>
+						<div class="card">
+							<a class="productLink link-dark">
+								<img class="randomProduct" src="../../images/user/mainPage/product/randomProduct15.jpg">
+								<span class="fs-5 d-block pt-2 px-1">상품이름</span>
+							</a>
+							<p class="card-text fw-bold pt-2 px-1 mb-5">상품가격</p>
 							<div class="card-footer box-white">
 								<small class="text-muted">Last updated 3 mins ago</small>
 							</div>
