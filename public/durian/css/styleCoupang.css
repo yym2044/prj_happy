@@ -1,0 +1,35 @@
+ul.nav li.dropdown:hover>ul.dropdown-menu {
+	display: block;
+	margin: 0;
+}
+
+footer div div a {
+	text-decoration: none;
+	color: black;
+	padding: 5px;
+}
+
+.footerNav {
+	font-size: small;
+	padding: 8px;
+}
+
+.nav-item {
+	font-size: small;
+}
+
+.randomProduct, .todayHot {
+	width: 100%;
+}
+
+.productLink {
+	text-decoration: none;
+}
+
+.productLink:hover {
+	text-decoration: underline;
+}
+
+.btnText {
+	font-size: small;
+}
