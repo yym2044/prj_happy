@@ -5,6 +5,7 @@
 checkNull = function (obj, value, message) {
 	if(value == "" || value == null){
 		alert(message);
+		obj.addClass("is-invalid");
 		obj.focus();
 		return false;
 	} else {
@@ -21,6 +22,17 @@ function checkNull (obj, value, message) {
 	}
 }
 
+checkNoSelect = function(obj, value, message){
+	if(value == 0){
+		alert(message);
+		obj.addClass("is-invalid");
+		obj.focus();
+		return false;
+	} else {
+		return true;
+	}
+}
+
 
 checkOnlyNumber = function(obj, value, message) {
     var regExp = /^[0-9]+$/;
@@ -29,6 +41,7 @@ checkOnlyNumber = function(obj, value, message) {
 	} else {
 		alert(message);
         obj.focus();
+        obj.addClass("is-invalid");
 		return false;
 	}
 }
@@ -41,6 +54,7 @@ checkId = function(obj, value, message) {
 	} else {
 		alert(message);
         obj.focus();
+        obj.addClass("is-invalid");
 		return false;
 	}
 }
@@ -54,6 +68,7 @@ checkPassword = function(obj, value, message) {
 	} else {
 		alert(message);
         obj.focus();
+        obj.addClass("is-invalid");
 		return false;
 	}
 }
@@ -73,6 +88,7 @@ checkEmail = function(obj, value, message) {
     } else {
 		alert(message);
 		obj.focus();
+		obj.addClass("is-invalid");
 		return false;
 	}
 }
@@ -85,6 +101,20 @@ checkMobile = function(obj, value, message) {
     } else {
 		alert(message);
 		obj.focus();
+		obj.addClass("is-invalid");
 		return false;
 	}
 }
+
+$("input").keyup(function(){
+	$(this).removeClass("is-invalid");
+});
+$("input").on("change", function(){
+	$(this).removeClass("is-invalid");
+});
+$("#ifmeEmailDomainCd").on("change", function(){
+	$("#ifmeEmailDomain").removeClass("is-invalid");
+});
+$("select").on("change", function(){
+	$(this).removeClass("is-invalid");
+});
