@@ -33,3 +33,20 @@ footer div div a {
 .btnText {
 	font-size: small;
 }
+
+.productName {
+	font-size: large;
+	font-weight: bold;
+}
+
+.productPrice {
+	font-size: x-large;
+	font-weight: bold;
+	color : hotpink;
+}
+
+.arrivalDate {
+	font-size: large;
+	font-weight: bold;
+	color : green;
+}
