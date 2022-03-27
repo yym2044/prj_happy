@@ -175,6 +175,7 @@
 							<br>
 							<select class="form-select" style="width: 18%; font-size: small;">
 								<option>::선택::</option>
+								<option>XL</option>
 								<option>L</option>
 								<option>M</option>
 								<option>S</option>
@@ -184,8 +185,8 @@
 							<br>
 							<select class="form-select" style="width: 18%; font-size: small;">
 								<option>::선택::</option>
-								<option>White</option>
-								<option>Black</option>
+								<option>화이트</option>
+								<option>블랙</option>
 							</select>
 						</div>
 					</div>
@@ -194,10 +195,20 @@
 							<input class="form-control" type="number" value="1" min="1" style="height: 38px;">
 						</div>
 						<div class="col px-1">
-							<button class="btn btn-info w-100 rounded-0 text-white">장바구니 담기</button>
+							<a id="btnCart" class="btn btn-info w-100 rounded-0 text-white" data-bs-placement="top" data-bs-content="
+							<div class='row p-0'>
+								<div class='col text-end'>
+									<a id='closePop' type='button' class='btn-close btn-lg' data-dismiss='popover'></a>
+								</div>
+							</div>
+							<div class='row p-3 text-center'>
+								<div class='col pb-3'>상품이 장바구니에 담겼습니다.</div>
+								<a class='btn btn-outline-primary' href='#'>장바구니 바로가기 ></a>
+							</div>
+							">장바구니 담기</a>
 						</div>
 						<div class="col p-0">
-							<button class="btn btn-primary w-100 rounded-0">바로 구매</button>
+							<a href="./productCheckOut.html" class="btn btn-primary w-100 rounded-0">바로 구매 ></a>
 						</div>
 					</div>
 					<div class="row m-1 py-2">
@@ -524,19 +535,19 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script type="text/javascript">
-		//툴팁버튼 클릭 시 보였다 안보였다 토글 
-		$("button[data-name=open_tooltip]").on("click", function() {
-			$(this).toggleClass("on").next(".layer_tooltip").toggleClass("on");
-			return false;
-		});
-		//툴팁 외 영역 클릭하면 닫히게 
-		$("body").on('touchstart', function(e) {
-			if (!$(".layer_tooltip.on").parent().has(e.target).length) {
-				$("button[data-name=open_tooltip]").removeClass("on");
-				$(".layer_tooltip").removeClass("on");
-			}
-			;
-		});
+		$(document).ready(function() {
+			$("#btnCart").popover({
+				html : true,
+				trigger : "click"
+			});
+		})
+		
+		$("#closePop").on("click", function(){
+			$("#btnCart").popover({
+				trigger : "click"
+			});
+		})
+		
 	</script>
 
 </body>
